@@ -1,0 +1,22 @@
+.info {
+  padding: 0 20px;
+}
+
+.info__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.steps-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.steps-list__item {
+  padding: 0;
+  padding-left: 80px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
