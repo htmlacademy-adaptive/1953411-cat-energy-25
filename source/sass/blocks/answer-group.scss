@@ -1,0 +1,73 @@
+.answer-group {
+  padding: 20px;
+  margin: 0;
+
+  border: none;
+}
+
+.answer-group__label {
+  padding-left: 45px;
+  position: relative;
+}
+
+.answer-group__title {
+  color: #444444;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.answer-group__field {
+  padding: 14px;
+
+  color: #444444;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: #444444;
+  }
+}
+
+.answer-group__radio-mark {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+}
+
+.answer-group__radio:checked + .answer-group__radio-mark::before {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+  background-color: #68b738;
+  content: "";
+}
+
+.answer-group__checkbox-mark {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 26px;
+  height: 26px;
+
+  border: 1px solid #cdcdcd;
+}
+
+.answer-group__checkbox:checked + .answer-group__checkbox-mark::before {
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  width: 18px;
+  height: 14px;
+
+  background-image: url("../../img/arrow.svg");
+  content: "";
+}

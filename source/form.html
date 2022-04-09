@@ -52,12 +52,21 @@
           </fieldset>
           <fieldset class="main-form__group answer-group">
             <legend class="visually-hidden">Тип программы.</legend>
-            <input class="answer-group__field" type="radio" id="slim" name="program-type" value="slim" checked>
-            <label class="answer-group__title" for="slim">ИМЯ:*</label>
-            <input class="answer-group__field" type="radio" id="pro" name="program-type" value="pro">
-            <label class="answer-group__title" for="pro">Вес (кг):*</label>
-            <input class="answer-group__field" type="radio" id="advice" name="program-type" value="advice">
-            <label class="answer-group__title" for="advice">Возраст (лет):</label>
+            <label class="answer-group__label">
+              <input class="answer-group__radio visually-hidden" type="radio" id="slim" name="program-type" value="slim" checked>
+              <span class="answer-group__radio-mark"></span>
+              <span class="answer-group__title">похудение</span>
+            </label>
+            <label class="answer-group__label">
+              <input class="answer-group__radio visually-hidden" type="radio" id="pro" name="program-type" value="pro">
+              <span class="answer-group__radio-mark"></span>
+              <span class="answer-group__title">Набор массы</span>
+            </label>
+            <label class="answer-group__label">
+              <input class="answer-group__radio visually-hidden" type="radio" id="advice" name="program-type" value="advice">
+              <span class="answer-group__radio-mark"></span>
+              <span class="answer-group__title">Не знаю (Нужен ваш совет)</span>
+            </label>
           </fieldset>
           <fieldset class="main-form__group answer-group">
             <legend class="main-form__title">Контактные данные (владельца кота)</legend>
@@ -68,19 +77,31 @@
           </fieldset>
           <fieldset class="main-form__group answer-group">
             <legend class="main-form__title">Комментарий</legend>
-            <label class="visually-hidden" for="comment">Оставьте Ваш Комментарий.</label>
+            <label class="visually-hidden">Оставьте Ваш Комментарий.</label>
             <textarea class="answer-group__field" type="text" id="comment" name="comment" rows="5" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
           <fieldset class="main-form__group answer-group">
             <legend class="main-form__title">Дополнительно</legend>
-            <input class="answer-group__field" type="checkbox" id="sugar" name="sugar" checked>
-            <label class="answer-group__title" for="sugar">сахарозаменитель</label>
-            <input class="answer-group__field" type="checkbox" id="water" name="water">
-            <label class="answer-group__title" for="water">питьевая вода</label>
-            <input class="answer-group__field" type="checkbox" id="milk" name="milk">
-            <label class="answer-group__title" for="milk">молоко</label>
-            <input class="answer-group__field" type="checkbox" id="vitamins" name="vitamins">
-            <label class="answer-group__title" for="vitamins">витамины</label>
+            <label class="answer-group__label">
+              <input class="answer-group__checkbox visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
+              <span class="answer-group__checkbox-mark"></span>
+              <span class="answer-group__title">сахарозаменитель</span>
+            </label>
+            <label class="answer-group__label">
+              <input class="answer-group__checkbox visually-hidden" type="checkbox" id="water" name="water">
+              <span class="answer-group__checkbox-mark"></span>
+              <span class="answer-group__title">питьевая вода</span>
+            </label>
+            <label class="answer-group__label" for="milk">
+              <input class="answer-group__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
+              <span class="answer-group__checkbox-mark"></span>
+              <span class="answer-group__title">молоко</span>
+            </label>
+            <label class="answer-group__label">
+              <input class="answer-group__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+              <span class="answer-group__checkbox-mark"></span>
+              <span class="answer-group__title">витамины</span>
+            </label>
           </fieldset>
           <button class="main-form__button button button--primary" type="submit">отправить заявку</button>
           <p class="main-form__explanation">* — Обязательные поля</p>
