@@ -1,0 +1,17 @@
+
+.button {
+  display: block;
+  padding: 11px 0;
+  width: 280px;
+
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: #69b738;
+  text-transform: uppercase;
+  color: #ffffff;
+}
