@@ -11,7 +11,7 @@
 }
 
 .answer-group__title {
-  color: #444444;
+  color: $grey;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -19,12 +19,12 @@
 .answer-group__field {
   padding: 14px;
 
-  color: #444444;
+  color: $grey;
   font-size: 16px;
   text-transform: uppercase;
 
   &::placeholder {
-    color: #444444;
+    color: $grey;
   }
 }
 
@@ -36,7 +36,7 @@
   height: 30px;
 
   border-radius: 50%;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $light-grey;
 }
 
 .answer-group__radio:checked + .answer-group__radio-mark::before {
@@ -47,7 +47,7 @@
   height: 14px;
 
   border-radius: 50%;
-  background-color: #68b738;
+  background-color: $green;
   content: "";
 }
 
@@ -58,7 +58,7 @@
   width: 26px;
   height: 26px;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $light-grey;
 }
 
 .answer-group__checkbox:checked + .answer-group__checkbox-mark::before {
