@@ -11,20 +11,6 @@
   line-height: 24px;
 }
 
-.additional-product-card {
-  padding: 13px 0 19px;
-}
-
-.additional-product-card__title {
-  padding: 0;
-  margin: 0;
-
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #222222;
-}
-
 .additional-products__list {
   margin: 0;
   padding: 0;
@@ -32,33 +18,14 @@
   list-style-type: none;
 }
 
-.additional-information-list {
-  margin: 0;
-}
-
-.additional-information-list__item {
-  font-family: "Arial", sans-serif;
-  line-height: 14px;
-  color: #444444;
-}
-
-.additional-information-list__description {
-  padding: 0;
-  margin: 0;
-
-  font-family: "Arial", sans-serif;
-  line-height: 14px;
-  color: #444444;
-}
-
-.special-offer {
+.additional-products__offer {
   padding: 58px 61px 43px 58px;
   background-image: url("../../img/special-offer-cat.jpg");
   background-repeat: no-repeat;
   background-size: 280px 290px;
 }
 
-.special-offer__description {
+.additional-products__text {
   position: relative;
 
   padding-top: 128px;
