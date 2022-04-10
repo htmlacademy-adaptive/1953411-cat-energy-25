@@ -7,36 +7,3 @@
   font-size: 36px;
   line-height: 40px;
 }
-
-.steps-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.steps-list__item {
-  height: 60px;
-  padding: 0;
-  padding-left: 80px;
-  font-family: $secondary-font;
-  color: $grey;
-  background-repeat: no-repeat;
-  background-size: 60px 60px;
-  background-position: 0 0;
-}
-
-.steps-list__item--leaf {
-  background-image: url("../../img/leaf.png");
-}
-
-.steps-list__item--water {
-  background-image: url("../../img/water.png");
-}
-
-.steps-list__item--cutlery {
-  background-image: url("../../img/cultery.png");
-}
-
-.steps-list__item--clock {
-  background-image: url("../../img/clock.png");
-}
