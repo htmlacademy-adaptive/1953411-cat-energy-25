@@ -1,0 +1,21 @@
+.address {
+  padding: 26px 20px;
+}
+
+.address__call {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark;
+  text-transform: uppercase;
+}
+
+.address__description {
+  margin: 0;
+
+  font-style: normal;
+  font-family: $secondary-font;
+  line-height: 20px;
+  color: $grey;
+}

@@ -1,0 +1,26 @@
+.presentation {
+  padding: 27px 35px 0;
+  background-image: url("../../img/cat-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  color: $white;
+}
+
+.presentation__header {
+  margin: 0;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.presentation__slogan {
+  margin: 0;
+  padding: 0;
+
+  line-height: 14px;
+}
+
+.presentation__button {
+  margin: 0 auto;
+}
