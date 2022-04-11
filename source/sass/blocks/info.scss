@@ -1,9 +1,20 @@
 .info {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .info__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+}
+
+.info__list {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 20px;
 }

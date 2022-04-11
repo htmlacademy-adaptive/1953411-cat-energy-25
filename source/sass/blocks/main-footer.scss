@@ -1,3 +1,22 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
   padding: 20px;
+  margin: 0 auto;
+}
+
+.main-footer__link {
+  align-self: center;
+}
+
+.main-footer__social {
+  align-self: center;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

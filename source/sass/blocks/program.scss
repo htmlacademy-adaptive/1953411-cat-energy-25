@@ -1,3 +1,9 @@
 .program {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 20px;
+  box-sizing: border-box;
+  width: 320px;
   padding: 0 20px;
+  margin: 0 auto;
 }
