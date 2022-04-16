@@ -1,12 +1,15 @@
 .site-list {
-  display: flex;
   display: none;
   flex-direction: column;
-  width: 320px;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .site-list__item {

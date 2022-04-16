@@ -1,5 +1,14 @@
 .address {
+  box-sizing: border-box;
+  min-height: 112px;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 199px;
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 70px;
+  }
 }
 
 .address__call {

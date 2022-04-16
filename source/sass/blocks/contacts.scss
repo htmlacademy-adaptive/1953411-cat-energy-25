@@ -2,7 +2,14 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 320px;
   padding: 0;
   margin: 0 auto;
+}
+
+.contacts__map {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

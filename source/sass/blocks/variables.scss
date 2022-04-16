@@ -1,5 +1,10 @@
+//* Fonts *//
+
 $primary-font: "Oswald", "Arial", sans-serif;
 $secondary-font: "Arial", sans-serif;
+
+//* Colors *//
+
 $black: #000000;
 $dark: #111111;
 $dark-grey: #222222;
@@ -11,3 +16,9 @@ $special-grey: #e7e7e7;
 $basic-grey: #f2f2f2;
 $white: #ffffff;
 $green: #68b738;
+
+//* Viewports *//
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;

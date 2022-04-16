@@ -3,11 +3,38 @@
   justify-content: space-between;
   align-content: center;
   padding: 10px 20px 17px;
-  width: 320px;
   box-sizing: border-box;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 140px;
+    padding: 24px 30px;
+  }
 }
 
 .main-header__logo {
+  width: 34px;
+  height: 38px;
+  background-image: url("../../img/logo-mobile.svg");
+  background-size: 34px 38px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+    background-image: url("../../img/logo-desktop.svg");
+    background-size: 174px 52px;
+  }
+}
+
+.main-header__logo-text {
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

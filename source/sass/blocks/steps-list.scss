@@ -13,20 +13,67 @@
   background-repeat: no-repeat;
   background-size: 60px 60px;
   background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    height: 280px;
+    padding-left: 0;
+    padding-top: 150px;
+
+    background-position:
+      0 40px,
+      127px 40px;
+  }
 }
 
 .steps-list__item--leaf {
   background-image: url("../../img/leaf.png");
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      url("../../img/leaf.png"),
+      url("../../img/number-1.png");
+    background-size:
+      80px 80px,
+      71px 227px;
+  }
 }
 
 .steps-list__item--water {
   background-image: url("../../img/water.png");
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      url("../../img/water.png"),
+      url("../../img/number-2.png");
+    background-size:
+      80px 80px,
+      113px 229px;
+  }
 }
 
 .steps-list__item--cutlery {
   background-image: url("../../img/cultery.png");
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      url("../../img/cultery.png"),
+      url("../../img/number-3.png");
+    background-size:
+      80px 80px,
+      112px 232px;
+  }
 }
 
 .steps-list__item--clock {
   background-image: url("../../img/clock.png");
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      url("../../img/clock.png"),
+      url("../../img/number-4.png");
+    background-size:
+      80px 80px,
+      121px 227px;
+  }
 }

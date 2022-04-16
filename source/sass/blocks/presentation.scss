@@ -2,14 +2,20 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 320px;
   padding: 27px 20px 20px;
   margin: 0 auto;
 
-  background-image: url("../../img/cat-background.jpg");
+  background-image: url("../img/cat-background.jpg");
   background-repeat: no-repeat;
-  background-size: 320px 302px;
+  background-size: contain;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+
+    background-image: none;
+    color: $black;
+  }
 }
 
 .presentation__header {
@@ -32,6 +38,11 @@
 
 .presentation__image {
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
 }
 
 .presentation__button {

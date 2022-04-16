@@ -11,9 +11,17 @@
   background-position: center;
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__list {
   position: absolute;
   right: -20px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
