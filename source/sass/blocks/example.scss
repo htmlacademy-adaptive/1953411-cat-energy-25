@@ -8,10 +8,24 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
+    min-height: 1080px;
     padding: 45px 30px 56px;
 
-    background-color: $white;
+    background-image: linear-gradient(to bottom, $white, $white 619px, $basic-grey 619px, $basic-grey);
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 641px;
+    padding: 43px 110px 70px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: linear-gradient(to bottom, $white, $white 179px, $basic-grey 179px, $basic-grey);
+  }
+}
+
+.example__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .example__title {

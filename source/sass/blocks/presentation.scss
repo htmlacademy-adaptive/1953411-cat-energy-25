@@ -5,7 +5,7 @@
   padding: 27px 20px 20px;
   margin: 0 auto;
 
-  background-image: url("../img/cat-background.jpg");
+  background-image: url("../../img/cat-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   color: $white;
@@ -16,9 +16,19 @@
     background-image: none;
     color: $black;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 696px;
+    padding: 140px 110px 0;
+
+    background-image: url("../../img/cat-background.jpg");
+    background-position: 50vw;
+    background-size: contain;
+    color: $black;
+  }
 }
 
-.presentation__header {
+.presentation__title {
   margin: 0;
   padding: 0;
 
@@ -26,6 +36,11 @@
   line-height: 36px;
   font-weight: 400;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .presentation__slogan {
@@ -34,6 +49,11 @@
 
   line-height: 14px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .presentation__image {
@@ -43,8 +63,18 @@
     width: 709px;
     height: 609px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .presentation__button {
   align-self: center;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    height: 54px;
+  }
 }

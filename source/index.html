@@ -39,7 +39,7 @@
     </header>
     <main class="main-container">
       <section class="presentation">
-        <h1 class="presentation__header">Функциональное питание для котов</h1>
+        <h1 class="presentation__title">Функциональное питание для котов</h1>
         <p class="presentation__slogan">Занялся собой? Займись котом!</p>
         <img class="presentation__image" src="img/index-product.png" width="280" height="270" alt="Коробка с кормом.">
         <a class="presentation__button button button--primary" href="form.html">Подобрать программу</a>
@@ -69,26 +69,30 @@
         </ul>
       </section>
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <dl class="example__list achievement-list">
-          <div class="achievement-list__item">
-            <dt class="achievement-list__number">5 КГ</dt>
-            <dd class="achievement-list__description">снижение веса</dd>
-          </div>
-          <div class="achievement-list__item">
-            <dt class="achievement-list__number">60 ДНЕЙ</dt>
-            <dd class="achievement-list__description">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="example__total">Затраты на питание: 15 000 РУБ. </p>
-        <img class="example__image" src="img/cat-before.png" alt="Толстенький котик.">
-        <form class="example__toggler index-toggler">
-          <label class="index-toggler__description" for="cat-before">было</label>
-          <input class="index-toggler__input" name="cat-switch" value="cat-before" id="cat-before" type="radio" checked>
-          <input class="index-toggler__input" name="cat-switch" value="cat-after" id="cat-after" type="radio">
-          <label class="index-toggler__description" for="cat-after">стало</label>
-        </form>
+        <div class="example__container">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <dl class="example__list achievement-list">
+            <div class="achievement-list__item">
+              <dt class="achievement-list__number">5 КГ</dt>
+              <dd class="achievement-list__description">снижение веса</dd>
+            </div>
+            <div class="achievement-list__item">
+              <dt class="achievement-list__number">60 ДНЕЙ</dt>
+              <dd class="achievement-list__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="example__total">Затраты на питание: 15 000 РУБ. </p>
+        </div>
+        <div class="example_container">
+          <img class="example__image" src="img/cat-before.png" alt="Толстенький котик.">
+          <form class="example__toggler index-toggler">
+            <label class="index-toggler__description" for="cat-before">было</label>
+            <input class="index-toggler__input" name="cat-switch" value="cat-before" id="cat-before" type="radio" checked>
+            <input class="index-toggler__input" name="cat-switch" value="cat-after" id="cat-after" type="radio">
+            <label class="index-toggler__description" for="cat-after">стало</label>
+          </form>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Карта и адрес.</h2>
