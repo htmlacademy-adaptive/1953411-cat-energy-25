@@ -1,7 +1,6 @@
 .presentation {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   padding: 27px 20px 20px;
   margin: 0 auto;
 
@@ -18,13 +17,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     min-height: 696px;
     padding: 140px 110px 0;
 
     background-image: url("../../img/cat-background.jpg");
-    background-position: 50vw;
+    background-position: 720px;
     background-size: contain;
-    color: $black;
   }
 }
 

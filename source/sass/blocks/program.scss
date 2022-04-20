@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 100%;
   row-gap: 20px;
-  box-sizing: border-box;
   padding: 0 20px;
   margin: 0;
 
@@ -24,7 +23,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   padding: 30px 20px 18px;
 
   background-color: $basic-grey;

@@ -2,22 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+  width: 320px;
   padding: 10px 20px 17px;
-  box-sizing: border-box;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     height: 140px;
     padding: 24px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    width: 100%;
+    width: 1440px;
     height: 140px;
     padding: 53px 110px 29px;
-
-    background-color: transparent;
   }
 }
 
@@ -34,6 +32,7 @@
     background-image: url("../../img/logo-desktop.svg");
     background-size: 174px 52px;
   }
+
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
@@ -46,10 +45,6 @@
   align-self: center;
 
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
     display: none;
   }
 }
