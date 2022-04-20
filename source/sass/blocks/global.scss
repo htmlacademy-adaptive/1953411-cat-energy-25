@@ -1,17 +1,3 @@
-$primary-font: "Oswald", "Arial", sans-serif;
-$secondary-font: "Arial", sans-serif;
-$black: #000000;
-$dark: #111111;
-$dark-grey: #222222;
-$grey: #444444;
-$classic-grey: #666666;
-$light-grey: #cdcdcd;
-$light: #d9d9d9;
-$special-grey: #e7e7e7;
-$basic-grey: #f2f2f2;
-$white: #ffffff;
-$green: #68b738;
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -23,13 +9,23 @@ $green: #68b738;
   clip: rect(0 0 0 0);
 }
 
-body {
-  margin: 0;
+html {
+  height: 100%;
+  font-size: 14px;
   font-family: $primary-font;
+  line-height: 18px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+
   background-color: $white;
   color: $black;
+}
+
+* {
+  box-sizing: border-box;
 }

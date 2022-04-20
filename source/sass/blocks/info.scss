@@ -1,9 +1,39 @@
 .info {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 105px 45px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 110px 26px;
+  }
 }
 
 .info__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+}
+
+.info__list {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 230px 246px 248px 250px;
+    column-gap: 77px;
+  }
 }

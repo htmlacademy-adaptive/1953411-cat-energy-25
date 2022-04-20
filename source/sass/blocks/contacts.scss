@@ -1,0 +1,36 @@
+.contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.contacts__container {
+  display: grid;
+  grid-template-columns: 139px 139px;
+  gap: 2px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    display: grid;
+    grid-template-columns: 163px 155px;
+    column-gap: 87px;
+  }
+}
+
+.contacts__map {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
