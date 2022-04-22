@@ -1,5 +1,13 @@
 .additional-products {
   padding: 25px 20px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 68px 30px 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 110px 86px;
+  }
 }
 
 .additional-products__title {
@@ -11,18 +19,65 @@
   line-height: 24px;
 }
 
+.additional-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .additional-products__list {
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 556px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin-right: 79px;
+    min-height: 288px;
+  }
+}
+
+.additional-products__item {
+  @media (min-width: $tablet-width) {
+    min-height: 139px;
+    padding: 26px 38px 28px;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 72px;
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 
 .additional-products__offer {
   padding: 58px 61px 43px 58px;
-  background-image: url("../../img/special-offer-cat.jpg");
+  background-image: url("../img/special-offer-cat.jpg");
   background-repeat: no-repeat;
   background-size: 280px 290px;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 124px 69px 77px;
+    width: 707px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 42px 42px;
+    width: 245px;
+    min-height: 289px;
+    background-size: auto 100%;
+    background-position: right;
+  }
 }
 
 .additional-products__text {
@@ -43,7 +98,39 @@
     width: 78px;
     height: 80px;
 
-    background-image: url("../../img/gift.svg");
+    background-image: url("../img/gift.svg");
     content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 345px;
+
+    &::before {
+      position: absolute;
+      top: -14px;
+      left: 0;
+      width: 80px;
+      height: 83px;
+
+      background-image: url("../img/gift.svg");
+      content: "";
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 129px;
+      padding-left: 0;
+
+      &::before {
+        position: absolute;
+        top: -14px;
+        left: 0;
+        width: 80px;
+        height: 83px;
+
+        background-image: url("../img/gift.svg");
+        content: "";
+      }
+    }
   }
 }

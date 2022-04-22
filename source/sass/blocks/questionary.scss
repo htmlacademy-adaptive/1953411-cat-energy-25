@@ -1,5 +1,13 @@
 .questionary {
   padding: 27px 0 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 72px 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 110px 82px;
+  }
 }
 
 .questionary__title {

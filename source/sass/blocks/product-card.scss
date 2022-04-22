@@ -1,5 +1,12 @@
 .product-card {
   padding: 20px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 511px;
+    padding: 36px 37px 39px;
+
+    background-image: linear-gradient(to bottom, $white, $white 81px, $basic-grey 81px, $basic-grey);
+  }
 }
 
 .product-card__title {
@@ -24,4 +31,8 @@
   font-size: 12px;
   line-height: 16px;
   color: $grey;
+}
+
+.product-card__button {
+  padding: 10px 0;
 }

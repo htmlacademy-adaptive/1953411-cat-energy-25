@@ -1,3 +1,22 @@
+.main-form__group {
+  padding: 20px;
+  margin: 0;
+
+  border: none;
+
+  &--program-type {
+    border: 1px solid $special-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &--program-type {
+      padding: 25px 28px;
+    }
+  }
+}
+
 .main-form__explanation {
   padding: 0;
   margin: 0;
@@ -11,6 +30,11 @@
   line-height: 26px;
 }
 
+.main-form__button-group {
+  display: flex;
+}
+
 .main-form__button {
+  width: 282px;
   margin: 0 auto;
 }
