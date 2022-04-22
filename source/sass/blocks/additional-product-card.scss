@@ -1,22 +1,31 @@
 .additional-product-card {
-  padding: 13px 0 19px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 294px 214px 52px 244px;
+    column-gap: 30px;
+    align-items: center;
+  }
 }
 
 .additional-product-card__title {
-  padding: 0;
   margin: 0;
 
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $dark-grey;
+  text-transform: uppercase;
 }
 
-.additional-product-card__list {
+.additional-product-card__amount {
   margin: 0;
-}
 
-.additional-product-card__item {
   font-family: $secondary-font;
   line-height: 14px;
   color: $grey;
@@ -29,4 +38,9 @@
   font-family: $secondary-font;
   line-height: 14px;
   color: $grey;
+}
+
+.additional-product-card__button {
+  height: 40px;
+  width: 100%;
 }

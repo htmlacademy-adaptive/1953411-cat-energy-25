@@ -26,12 +26,12 @@
 }
 
 .steps-list__item--leaf {
-  background-image: url("../../img/leaf.png");
+  background-image: url("../img/leaf.png");
 
   @media (min-width: $tablet-width) {
     background-image:
-      url("../../img/leaf.png"),
-      url("../../img/number-1.png");
+      url("../img/leaf.png"),
+      url("../img/number-1.png");
     background-size:
       80px 80px,
       71px 227px;
@@ -39,12 +39,12 @@
 }
 
 .steps-list__item--water {
-  background-image: url("../../img/water.png");
+  background-image: url("../img/water.png");
 
   @media (min-width: $tablet-width) {
     background-image:
-      url("../../img/water.png"),
-      url("../../img/number-2.png");
+      url("../img/water.png"),
+      url("../img/number-2.png");
     background-size:
       80px 80px,
       113px 229px;
@@ -52,12 +52,12 @@
 }
 
 .steps-list__item--cutlery {
-  background-image: url("../../img/cultery.png");
+  background-image: url("../img/cultery.png");
 
   @media (min-width: $tablet-width) {
     background-image:
-      url("../../img/cultery.png"),
-      url("../../img/number-3.png");
+      url("../img/cultery.png"),
+      url("../img/number-3.png");
     background-size:
       80px 80px,
       112px 232px;
@@ -65,12 +65,12 @@
 }
 
 .steps-list__item--clock {
-  background-image: url("../../img/clock.png");
+  background-image: url("../img/clock.png");
 
   @media (min-width: $tablet-width) {
     background-image:
-      url("../../img/clock.png"),
-      url("../../img/number-4.png");
+      url("../img/clock.png"),
+      url("../img/number-4.png");
     background-size:
       80px 80px,
       121px 227px;

@@ -2,16 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип CatEnergy.">
+        <span class="visually-hidden">Логотип CatEnergy.</span>
       </a>
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo-text" href="#">
         <img class="main-header__logo-image" src="img/catenergy-text.svg" width="101" height="18" alt="CatEnergy.">
       </a>
       <nav class="main-navigation">
@@ -37,84 +37,102 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="main-container main-container--inner">
       <section class="questionary">
         <h1 class="questionary__title">Подбор программы</h1>
         <p class="questionary__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="questionary__form main-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="main-form__group answer-group">
-            <legend class="visually-hidden">Информация о котике.</legend>
-            <label class="answer-group__title" for="name">ИМЯ:*</label>
-            <input class="answer-group__field" type="text" id="name" name="name" placeholder="барсик" required>
-            <label class="answer-group__title" for="weight">Вес (кг):*</label>
-            <input class="answer-group__field" type="text" id="weight" name="weight" placeholder="7" required>
-            <label class="answer-group__title" for="age">Возраст (лет):</label>
-            <input class="answer-group__field" type="text" id="age" name="age" placeholder="7" required>
-          </fieldset>
-          <fieldset class="main-form__group answer-group">
-            <legend class="visually-hidden">Тип программы.</legend>
-            <label class="answer-group__label">
-              <input class="answer-group__radio visually-hidden" type="radio" id="slim" name="program-type" value="slim" checked>
-              <span class="answer-group__radio-mark"></span>
-              <span class="answer-group__title">похудение</span>
-            </label>
-            <label class="answer-group__label">
-              <input class="answer-group__radio visually-hidden" type="radio" id="pro" name="program-type" value="pro">
-              <span class="answer-group__radio-mark"></span>
-              <span class="answer-group__title">Набор массы</span>
-            </label>
-            <label class="answer-group__label">
-              <input class="answer-group__radio visually-hidden" type="radio" id="advice" name="program-type" value="advice">
-              <span class="answer-group__radio-mark"></span>
-              <span class="answer-group__title">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </fieldset>
+          <div class="answer-group__wrapper">
+            <fieldset class="main-form__group answer-group">
+              <legend class="visually-hidden">Информация о котике.</legend>
+              <label class="answer-group__label">
+                <span class="answer-group__title">ИМЯ:*</span>
+                <input class="answer-group__field" type="text" name="name" placeholder="барсик" required>
+              </label>
+              <label class="answer-group__label">
+                <span class="answer-group__title">Вес (кг):*</span>
+                <input class="answer-group__field" type="text" name="weight" placeholder="7" required>
+              </label>
+              <label class="answer-group__label">
+                <span class="answer-group__title">Возраст (лет):</span>
+                <input class="answer-group__field" type="text" name="age" placeholder="7" required>
+              </label>
+            </fieldset>
+            <fieldset class="main-form__group main-form__group--program-type answer-group">
+              <legend class="visually-hidden">Тип программы.</legend>
+              <label class="answer-group__label answer-group__label--mark">
+                <input class="answer-group__radio visually-hidden" type="radio" id="slim" name="program-type" value="slim" checked>
+                <span class="answer-group__radio-mark"></span>
+                <span class="answer-group__title">похудение</span>
+              </label>
+              <label class="answer-group__label answer-group__label--mark">
+                <input class="answer-group__radio visually-hidden" type="radio" id="pro" name="program-type" value="pro">
+                <span class="answer-group__radio-mark"></span>
+                <span class="answer-group__title">Набор массы</span>
+              </label>
+              <label class="answer-group__label answer-group__label--mark">
+                <input class="answer-group__radio visually-hidden" type="radio" id="advice" name="program-type" value="advice">
+                <span class="answer-group__radio-mark"></span>
+                <span class="answer-group__title">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </fieldset>
+          </div>
           <fieldset class="main-form__group answer-group">
             <legend class="main-form__title">Контактные данные (владельца кота)</legend>
-            <label class="answer-group__title" for="email">E-mail:*</label>
-            <input class="answer-group__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-            <label class="answer-group__title" for="phone">Вес (кг):*</label>
-            <input class="answer-group__field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+            <div class="answer-group__wrapper">
+              <label class="answer-group__label" for="email">
+                <span class="answer-group__title">E-mail:*</span>
+                <input class="answer-group__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="answer-group__label">
+                <span class="answer-group__title">Телефон:*</span>
+                <input class="answer-group__field" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="main-form__group answer-group">
             <legend class="main-form__title">Комментарий</legend>
             <label class="visually-hidden">Оставьте Ваш Комментарий.</label>
-            <textarea class="answer-group__field" type="text" id="comment" name="comment" rows="5" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            <textarea class="answer-group__field" id="comment" name="comment" rows="5" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
           <fieldset class="main-form__group answer-group">
             <legend class="main-form__title">Дополнительно</legend>
-            <label class="answer-group__label">
-              <input class="answer-group__checkbox visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
-              <span class="answer-group__checkbox-mark"></span>
-              <span class="answer-group__title">сахарозаменитель</span>
-            </label>
-            <label class="answer-group__label">
-              <input class="answer-group__checkbox visually-hidden" type="checkbox" id="water" name="water">
-              <span class="answer-group__checkbox-mark"></span>
-              <span class="answer-group__title">питьевая вода</span>
-            </label>
-            <label class="answer-group__label" for="milk">
-              <input class="answer-group__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
-              <span class="answer-group__checkbox-mark"></span>
-              <span class="answer-group__title">молоко</span>
-            </label>
-            <label class="answer-group__label">
-              <input class="answer-group__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-              <span class="answer-group__checkbox-mark"></span>
-              <span class="answer-group__title">витамины</span>
-            </label>
+            <div class="answer-group__wrapper answer-group__wrapper--smaller">
+              <label class="answer-group__label answer-group__label--mark">
+                <input class="answer-group__checkbox visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
+                <span class="answer-group__checkbox-mark"></span>
+                <span class="answer-group__title">сахарозаменитель</span>
+              </label>
+              <label class="answer-group__label answer-group__label--mark">
+                <input class="answer-group__checkbox visually-hidden" type="checkbox" id="water" name="water">
+                <span class="answer-group__checkbox-mark"></span>
+                <span class="answer-group__title">питьевая вода</span>
+              </label>
+              <label class="answer-group__label answer-group__label--mark" for="milk">
+                <input class="answer-group__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
+                <span class="answer-group__checkbox-mark"></span>
+                <span class="answer-group__title">молоко</span>
+              </label>
+              <label class="answer-group__label answer-group__label--mark">
+                <input class="answer-group__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+                <span class="answer-group__checkbox-mark"></span>
+                <span class="answer-group__title">витамины</span>
+              </label>
+            </div>
           </fieldset>
-          <button class="main-form__button button button--primary" type="submit">отправить заявку</button>
-          <p class="main-form__explanation">* — Обязательные поля</p>
+          <div class="main-form__button-group">
+            <button class="main-form__button button button--primary" type="submit">отправить заявку</button>
+            <p class="main-form__explanation">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Карта и адрес.</h2>
-        <div class="contacts__container address">
+        <div class="contacts__container address address--inner">
           <p class="address__call">приглашаем к сотрудничеству дилеров!</p>
           <address class="address__description">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
         </div>
-        <div class="map">
+        <div class="contacts__map">
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.473852599556!2d30.31763476243655!3d59.938952522879696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648976397997!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
       </section>

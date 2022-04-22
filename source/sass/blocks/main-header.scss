@@ -22,21 +22,21 @@
 .main-header__logo {
   width: 34px;
   height: 38px;
-  background-image: url("../../img/logo-mobile.svg");
+  background-image: url("../img/logo-mobile.svg");
   background-size: 34px 38px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
-    background-image: url("../../img/logo-desktop.svg");
+    background-image: url("../img/logo-desktop.svg");
     background-size: 174px 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    background-image: url("../../img/logo-desktop.svg");
+    background-image: url("../img/logo-desktop.svg");
     background-size: 202px 59px;
   }
 }

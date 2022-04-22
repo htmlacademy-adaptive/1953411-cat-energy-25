@@ -4,7 +4,7 @@
   padding: 27px 20px 20px;
   margin: 0 auto;
 
-  background-image: url("../../img/cat-background.jpg");
+  background-image: url("../img/cat-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   color: $white;
@@ -21,7 +21,7 @@
     min-height: 696px;
     padding: 140px 110px 0;
 
-    background-image: url("../../img/cat-background.jpg");
+    background-image: url("../img/cat-background.jpg");
     background-position: 720px;
     background-size: contain;
   }
@@ -72,7 +72,7 @@
 .presentation__button {
   align-self: center;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 244px;
     height: 54px;
   }

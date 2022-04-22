@@ -2,16 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип CatEnergy.">
+        <span class="visually-hidden">Логотип CatEnergy.</span>
       </a>
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo-text" href="#">
         <img class="main-header__logo-image" src="img/catenergy-text.svg" width="101" height="18" alt="CatEnergy.">
       </a>
       <nav class="main-navigation">
@@ -37,7 +37,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="main-container main-container--inner">
       <h1 class="visually-hidden">Каталог.</h1>
       <section class="products">
         <h2 class="products__header">Каталог продукции</h2>
@@ -156,51 +156,45 @@
       </section>
       <section class="additional-products">
         <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list">
-          <li class="additional-products__item additional-product-card">
-            <b class="additional-product-card__title">Сахарозаменитель</b>
-            <dl class="additional-product-card__list">
-              <dt class="additional-product-card__item">1 упаковка (100 г)</dt>
-              <dd class="additional-product-card__description">200 Р.</dd>
-            </dl>
-            <button class="additional-product-card__button button button--primary" type="button">заказать</button>
-          </li>
-          <li class="additional-products__item additional-product-card">
-            <b class="additional-product-card__title">питьевая вода</b>
-            <dl class="additional-product-card__list">
-              <dt class="additional-product-card__item">5 литров</dt>
-              <dd class="additional-product-card__description">50 Р.</dd>
-            </dl>
-            <button class="additional-product-card__button button button--primary" type="button">заказать</button>
-          </li>
-          <li class="additional-products__item additional-product-card">
-            <b class="additional-product-card__title">молоко</b>
-            <dl class="additional-product-card__list">
-              <dt class="additional-product-card__item">1 литр</dt>
-              <dd class="additional-product-card__description">100 Р.</dd>
-            </dl>
-            <button class="additional-product-card__button button button--primary" type="button">заказать</button>
-          </li>
-          <li class="additional-products__item additional-product-card">
-            <b class="additional-product-card__title">витамины</b>
-            <dl class="additional-product-card__list">
-              <dt class="additional-product-card__item">1 упаковка (30 г)</dt>
-              <dd class="additional-product-card__description">300 Р.</dd>
-            </dl>
-            <button class="additional-product-card__button button button--primary" type="button">заказать</button>
-          </li>
-        </ul>
-        <div class="additional-products__offer">
-          <p class="additional-products__text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="additional-products__wrapper">
+          <ul class="additional-products__list">
+            <li class="additional-products__item additional-product-card">
+              <b class="additional-product-card__title">Сахарозаменитель</b>
+              <p class="additional-product-card__amount">1 упаковка (100 г)</p>
+              <p class="additional-product-card__description">200 Р.</p>
+              <button class="additional-product-card__button button button--primary" type="button">заказать</button>
+            </li>
+            <li class="additional-products__item additional-product-card">
+              <b class="additional-product-card__title">питьевая вода</b>
+              <p class="additional-product-card__amount">5 литров</p>
+              <p class="additional-product-card__description">50 Р.</p>
+              <button class="additional-product-card__button button button--primary" type="button">заказать</button>
+            </li>
+            <li class="additional-products__item additional-product-card">
+              <b class="additional-product-card__title">молоко</b>
+              <p class="additional-product-card__amount">1 литр</p>
+              <p class="additional-product-card__description">100 Р.</p>
+              <button class="additional-product-card__button button button--primary" type="button">заказать</button>
+            </li>
+            <li class="additional-products__item additional-product-card">
+              <b class="additional-product-card__title">витамины</b>
+              <p class="additional-product-card__amount">1 упаковка (30 г)</p>
+              <p class="additional-product-card__description">300 Р.</p>
+              <button class="additional-product-card__button button button--primary" type="button">заказать</button>
+            </li>
+          </ul>
+          <div class="additional-products__offer">
+            <p class="additional-products__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Карта и адрес.</h2>
-        <div class="contacts__container address">
+        <div class="contacts__container address address--inner">
           <p class="address__call">приглашаем к сотрудничеству дилеров!</p>
           <address class="address__description">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
         </div>
-        <div class="map">
+        <div class="contacts__map">
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.473852599556!2d30.31763476243655!3d59.938952522879696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648976397997!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
       </section>
