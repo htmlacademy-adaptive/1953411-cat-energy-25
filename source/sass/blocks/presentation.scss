@@ -1,29 +1,38 @@
 .presentation {
-  display: flex;
-  flex-direction: column;
-  padding: 27px 20px 20px;
-  margin: 0 auto;
-
   background-image: url("../img/cat-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
-
     background-image: none;
     color: $black;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
     min-height: 696px;
-    padding: 140px 110px 0;
 
     background-image: url("../img/cat-background.jpg");
-    background-position: 720px;
-    background-size: contain;
+    background-position: 50vw;
+    background-size: auto 100%;
+  }
+}
+
+.presentation__wrapper {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 27px 20px 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 140px 110px 0;
   }
 }
 

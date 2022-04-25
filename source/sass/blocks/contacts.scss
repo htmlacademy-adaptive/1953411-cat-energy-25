@@ -1,9 +1,18 @@
 .contacts {
+  width: 320px;
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .contacts__container {
@@ -29,6 +38,17 @@
 
 .contacts__map {
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.contacts iframe {
+  display: block;
+  border: none;
+
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 400px;

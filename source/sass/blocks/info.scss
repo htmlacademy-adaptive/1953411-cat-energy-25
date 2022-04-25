@@ -1,14 +1,17 @@
 .info {
+  width: 320px;
   display: flex;
   flex-direction: column;
   padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 45px 105px 45px 30px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
     padding: 71px 110px 26px;
   }
 }
