@@ -62,6 +62,7 @@
     position: absolute;
     top: 65px;
     right: 0;
+    z-index: 10;
   }
 
   .main-navigation--opened .site-list__link {
@@ -73,6 +74,26 @@
 
   .site-list__item:first-child .site-list__link {
     border-top: 2px solid #e6e6e6;
+  }
+
+  .main-navigation--nojs {
+    flex-grow: 1;
+  }
+
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-navigation--nojs .site-list__link {
+    width: 100%;
+    padding: 21px 0;
+
+    border-bottom: 2px solid #e6e6e6;
   }
 }
 

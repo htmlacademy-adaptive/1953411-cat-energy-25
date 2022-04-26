@@ -4,6 +4,7 @@
 
 .main-header__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   width: 320px;
@@ -11,6 +12,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    align-content: flex-start;
     width: 768px;
     height: 140px;
     padding: 24px 30px;
