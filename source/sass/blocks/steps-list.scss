@@ -8,8 +8,7 @@
   height: 60px;
   padding: 0;
   padding-left: 80px;
-  font-family: $secondary-font;
-  color: $grey;
+
   background-repeat: no-repeat;
   background-size: 60px 60px;
   background-position: 0 0;
@@ -22,6 +21,18 @@
     background-position:
       0 40px,
       127px 40px;
+  }
+}
+
+.steps-list__text {
+  display: inline-block;
+
+  font-family: $secondary-font;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -74,5 +85,9 @@
     background-size:
       80px 80px,
       121px 227px;
+
+    & .steps-list__text {
+      width: 245px;
+    }
   }
 }
