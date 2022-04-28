@@ -100,10 +100,15 @@
           <div class="example_container">
             <img class="example__image" src="img/cat-before.png" alt="Толстенький котик.">
             <form class="example__toggler index-toggler">
-              <label class="index-toggler__description" for="cat-before">было</label>
-              <input class="index-toggler__input" name="cat-switch" value="cat-before" id="cat-before" type="radio" checked>
-              <input class="index-toggler__input" name="cat-switch" value="cat-after" id="cat-after" type="radio">
-              <label class="index-toggler__description" for="cat-after">стало</label>
+              <label class="index-toggler__label index-toggler__label--left">
+                <input class="index-toggler__input visually-hidden" name="cat-switch" value="cat-before" type="radio" checked>
+                <span class="index-toggler__mark"></span>
+                <span class="index-toggler__description">было</span>
+              </label>
+              <label class="index-toggler__label index-toggler__label--right">
+                <input class="index-toggler__input visually-hidden" name="cat-switch" value="cat-after" type="radio">
+                <span class="index-toggler__mark"></span>
+                <span class="index-toggler__description">стало</span></label>
             </form>
           </div>
         </div>

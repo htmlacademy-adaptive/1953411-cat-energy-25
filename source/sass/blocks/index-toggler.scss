@@ -1,5 +1,72 @@
+.index-toggler {
+  margin: 0;
+  padding: 0;
+}
+
+.index-toggler__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 105px;
+  height: 30px;
+}
+
 .index-toggler__description {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.index-toggler__mark {
+  position: relative;
+
+  width: 43px;
+  height: 14px;
+
+  background-color: $white;
+  border: 1px solid $light-grey;
+}
+
+.index-toggler__label--left {
+  & .index-toggler__mark {
+    order: -1;
+
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+  }
+
+  & .index-toggler__description {
+    order: -2;
+  }
+
+  & .index-toggler__input:checked + .index-toggler__mark::before {
+    left: 5px;
+    }
+}
+
+.index-toggler__label--right {
+  & .index-toggler__mark {
+    border-radius: 0 6px 6px 0;
+    border-left: none;
+  }
+
+  & .index-toggler__input:checked + .index-toggler__mark::before {
+  right: 5px;
+  }
+}
+
+.index-toggler__input:checked + .index-toggler__mark::before {
+  position: absolute;
+  top: 3px;
+
+  width: 36px;
+  height: 6px;
+
+  background-color: $green;
+  border-radius: 6px;
+
+  content: "";
+}
+
+

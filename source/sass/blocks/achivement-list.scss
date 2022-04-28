@@ -1,12 +1,38 @@
+.achievement-list {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.achievement-list__item {
+  position: relative;
+
+  width: 124px;
+  height: 56px;
+  padding: 15px 0 17px;
+  margin: 0;
+
+  border-radius: 3px;
+  border: 1px solid $light-grey;
+}
+
 .achievement-list__number {
+  text-align: center;
   font-size: 24px;
   line-height: 24px;
 }
 
 .achievement-list__description {
+  position: absolute;
+  left: 18px;
+  top: 47px;
+
+  width: 87px;
   margin: 0;
+
+  text-align: center;
   font-family: $secondary-font;
   font-weight: 12px;
   line-height: 12px;
   color: $grey;
+  background-color: #eaeaea;
 }
