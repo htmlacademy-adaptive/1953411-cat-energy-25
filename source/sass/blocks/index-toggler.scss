@@ -10,12 +10,25 @@
 
   width: 105px;
   height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+    height: 40px;
+  }
 }
 
 .index-toggler__description {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .index-toggler__mark {
@@ -26,6 +39,10 @@
 
   background-color: $white;
   border: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .index-toggler__label--left {
@@ -42,7 +59,7 @@
 
   & .index-toggler__input:checked + .index-toggler__mark::before {
     left: 5px;
-    }
+  }
 }
 
 .index-toggler__label--right {
@@ -52,7 +69,11 @@
   }
 
   & .index-toggler__input:checked + .index-toggler__mark::before {
-  right: 5px;
+    right: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
   }
 }
 
@@ -68,5 +89,3 @@
 
   content: "";
 }
-
-
