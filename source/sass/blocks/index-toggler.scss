@@ -1,6 +1,10 @@
 .index-toggler {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+  }
 }
 
 .index-toggler__label {
@@ -12,7 +16,7 @@
   height: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 296px;
+    width: 70px;
     height: 40px;
   }
 }
@@ -23,8 +27,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 70px;
-
+    width: 100%;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -88,4 +91,43 @@
   border-radius: 6px;
 
   content: "";
+}
+
+.index-toggler__slider-container {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 426px;
+  }
+}
+
+.index-toggler__slider {
+  width: 100%;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+
+  background-color: #dcdcdc;
+  border-radius: 6px;
+
+  appearance: none;
+}
+
+.index-toggler__slider::-webkit-slider-thumb {
+  position: relative;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background-color: $green;
+  box-shadow: inset 0 0 0 12px $white;
+  border: 1px solid $light-grey;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+  appearance: none;
+  cursor: pointer;
 }

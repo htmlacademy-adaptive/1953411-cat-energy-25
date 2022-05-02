@@ -44,7 +44,7 @@
         <div class="presentation__wrapper">
           <h1 class="presentation__title">Функциональное питание для котов</h1>
           <p class="presentation__slogan">Занялся собой? Займись котом!</p>
-          <img class="presentation__image" src="img/index-product.png" width="280" height="270" alt="Коробка с кормом.">
+          <img class="presentation__image" src="img/index-product.png" width="552" height="499" alt="Коробка с кормом.">
           <a class="presentation__button button button--primary" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -94,7 +94,10 @@
                 <dt class="achievement-list__number">60 ДНЕЙ</dt>
                 <dd class="achievement-list__description">затрачено времени</dd>
               </div>
-              <div class="achievement-list__total">Затраты на питание: 15 000 РУБ.</div>
+              <div class="achievement-list__total">
+                <span class="achievement-list__total-text">Затраты на питание:</span>
+                <span class="achievement-list__total-number">15 000 РУБ.</span>
+              </div>
             </dl>
           </div>
           <div class="example__container">
@@ -108,6 +111,9 @@
                 <span class="index-toggler__mark"></span>
                 <span class="index-toggler__description">было</span>
               </label>
+              <div class="index-toggler__slider-container">
+                <input class="index-toggler__slider" type="range" min="0" max="100" vlaue="50">
+              </div>
               <label class="index-toggler__label index-toggler__label--right">
                 <input class="index-toggler__input visually-hidden" name="cat-switch" value="cat-after" type="radio">
                 <span class="index-toggler__mark"></span>
@@ -119,8 +125,8 @@
       <section class="contacts">
         <h2 class="visually-hidden">Карта и адрес.</h2>
         <div class="contacts__container address">
-          <p class="address__call">приглашаем к сотрудничеству дилеров!</p>
-          <address class="address__description">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+          <p class="address__call">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="address__description">ул. Большая Конюшенная, д. 19/8<br><span class="address__city">Санкт-Петербург</span></address>
         </div>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.473852599556!2d30.31763476243655!3d59.938952522879696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648976397997!5m2!1sru!2sru" width="320" height="362" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">

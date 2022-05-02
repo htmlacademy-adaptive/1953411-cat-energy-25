@@ -48,9 +48,10 @@
 
   text-decoration: none;
   color: $black;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    padding: 18px 0 11px;
+    padding: 18px 0 10px;
     margin-right: 35px;
 
     font-size: 18px;
