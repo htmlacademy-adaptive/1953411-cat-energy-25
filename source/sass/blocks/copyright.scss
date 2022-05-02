@@ -1,9 +1,25 @@
+.copyright {
+  height: 34px;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    width: 163px;
+  }
+}
+
 .copyright__title {
   margin: 0;
+
   font-weight: 400;
   font-family: $secondary-font;
   font-size: 16px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    margin-right: 22px;
+  }
 }
 
 .copyright__link {
