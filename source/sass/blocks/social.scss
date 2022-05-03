@@ -51,4 +51,12 @@
 
 .social__link {
   fill: $classic-grey;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

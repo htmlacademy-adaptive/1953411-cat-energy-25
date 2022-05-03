@@ -198,8 +198,21 @@
     height: 12px;
 
     background-image: url("../img/arrow-right.svg");
+    background-position: left -8px center;
+    transition: background-position 0.5s;
+    background-repeat: no-repeat;
 
     content: "";
+  }
+
+  &:hover::before {
+    background-position: left center;
+    transition: background-position 0.5s;
+  }
+
+  &:active,
+  &:active::before {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

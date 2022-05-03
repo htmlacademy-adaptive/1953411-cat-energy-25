@@ -22,9 +22,21 @@
 }
 
 .index-toggler__description {
+  margin: 0 10px 0 11px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  border-bottom: 1px dotted $light-grey;
+  transition: border-bottom 1s;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    transition: border-bottom 1s;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -130,4 +142,13 @@
 
   appearance: none;
   cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    border-color: $green;
+  }
 }

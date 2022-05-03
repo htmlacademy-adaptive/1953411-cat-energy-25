@@ -122,6 +122,14 @@
 .presentation__button {
   align-self: center;
 
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     align-self: flex-start;
 
