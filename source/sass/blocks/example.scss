@@ -62,8 +62,7 @@
 }
 
 .example__title {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   padding: 0;
 
   font-weight: 400;
@@ -123,8 +122,7 @@
 
   width: 280px;
   height: 232px;
-  margin: 0 auto;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
 
   @media (min-width: $tablet-width) {
     width: 592px;
