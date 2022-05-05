@@ -1,12 +1,130 @@
+.achievement-list {
+  margin: 0 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 408px;
+    margin-bottom: 0;
+  }
+}
+
+.achievement-list__item {
+  position: relative;
+
+  width: 124px;
+  height: 56px;
+  padding: 13px 0 17px;
+  margin: 0 0 34px;
+
+  border-radius: 3px;
+  border: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    padding-bottom: 20px;
+    margin-right: 42px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
 .achievement-list__number {
+  text-align: center;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .achievement-list__description {
+  position: absolute;
+  left: 18px;
+  top: 47px;
+
+  width: 87px;
   margin: 0;
+
+  text-align: center;
   font-family: $secondary-font;
   font-weight: 12px;
   line-height: 12px;
   color: $grey;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    left: 24px;
+    top: 63px;
+
+    width: 114px;
+
+    background-color: $white;
+  }
+}
+
+.achievement-list__item:nth-child(2) .achievement-list__description {
+  @media (min-width: $tablet-width) {
+    left: 10px;
+
+    width: 142px;
+  }
+}
+
+.achievement-list__total {
+  display: flex;
+
+  width: 100%;
+  margin: 0 auto;
+
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 174px;
+    margin: 0 0 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    flex-direction: row;
+    margin: 0;
+  }
+}
+
+.achievement-list__total-text,
+.achievement-list__total-number {
+  padding-top: 9px;
+
+
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.achievement-list__total-number {
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 63px;
+  }
 }

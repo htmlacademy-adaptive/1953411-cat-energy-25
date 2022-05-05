@@ -1,12 +1,15 @@
 .address {
+  width: 320px;
   min-height: 112px;
   padding: 26px 20px;
+  margin: 0 auto;
 
   &--inner {
     background-color: $basic-grey;
   }
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     height: 199px;
     padding: 56px 70px;
   }
@@ -15,10 +18,7 @@
     width: 565px;
     height: 198px;
     padding: 56px 80px;
-
-    &--inner {
-      background-color: $white;
-    }
+    background-color: $white;
   }
 }
 
@@ -29,6 +29,14 @@
   line-height: 20px;
   color: $dark;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    padding-top: 4px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__description {
@@ -38,4 +46,23 @@
   font-family: $secondary-font;
   line-height: 20px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    font-size: 16px;
+
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.address__city {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }

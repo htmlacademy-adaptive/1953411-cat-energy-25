@@ -1,22 +1,37 @@
 .info {
+  width: 320px;
+  min-height: 449px;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 20px 20px 49px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 781px;
     padding: 45px 105px 45px 30px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
+    min-height: 469px;
     padding: 71px 110px 26px;
   }
 }
 
 .info__title {
+  margin: 0 0 40px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .info__list {

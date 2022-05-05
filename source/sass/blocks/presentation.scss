@@ -1,34 +1,51 @@
 .presentation {
-  display: flex;
-  flex-direction: column;
-  padding: 27px 20px 20px;
-  margin: 0 auto;
-
-  background-image: url("../img/cat-background.jpg");
+  background-image: url("../img/cat-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: top center;
+  background-size: 100% auto;
   color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
-
     background-image: none;
     color: $black;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
     min-height: 696px;
-    padding: 140px 110px 0;
 
     background-image: url("../img/cat-background.jpg");
-    background-position: 720px;
-    background-size: contain;
+    background-position: 50vw;
+    background-size: auto 100%;
+  }
+}
+
+.presentation__wrapper {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  min-height: 500px;
+  padding: 27px 20px 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    min-height: 810px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    min-height: 694px;
+    padding: 140px 110px 0;
   }
 }
 
 .presentation__title {
-  margin: 0;
+  margin: 0 0 25px;
   padding: 0;
 
   font-size: 36px;
@@ -37,33 +54,64 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 500px;
+    margin-left: 87px;
+    margin-bottom: 40px;
+
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 
 .presentation__slogan {
-  margin: 0;
+  margin: 0 0 29px;
   padding: 0;
 
   line-height: 14px;
+  text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-left: 89px;
+    margin-bottom: 49px;
+
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 52px;
   }
 }
 
 .presentation__image {
+  margin-bottom: 3px;
   align-self: center;
+  width: 280px;
+  height: 270px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 201px;
+
     width: 709px;
     height: 609px;
+    margin-bottom: 0;
+
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
+    top: 140px;
+    left: 558px;
+
     width: 552px;
     height: 499px;
   }
@@ -72,8 +120,27 @@
 .presentation__button {
   align-self: center;
 
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: $transparent-grey;
+  }
+
   @media (min-width: $tablet-width) {
+    align-self: flex-start;
+
     width: 244px;
     height: 54px;
+    padding: 14px 0;
+    margin-left: 90px;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
