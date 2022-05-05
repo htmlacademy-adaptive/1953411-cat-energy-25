@@ -42,7 +42,9 @@
     <main class="main-container main-container--inner">
       <h1 class="visually-hidden">Каталог.</h1>
       <section class="products">
-        <h2 class="products__header">Каталог продукции</h2>
+        <div class="products__header-wrapper">
+          <h2 class="products__header">Каталог продукции</h2>
+        </div>
         <ul class="products__list">
           <li class="products__item product-card">
             <a class="product-card__link" href="#">
@@ -149,7 +151,7 @@
             </dl>
             <button class="product-card__button button button--primary" type="button">заказать</button>
           </li>
-          <li class="products__item product-card">
+          <li class="products__item product-card product-card--more">
             <a class="product-card__title" href="#">Показать еще 100500 товаров</a>
             <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
             <button class="product-card__button button button--secondary" type="button">показать все</button>

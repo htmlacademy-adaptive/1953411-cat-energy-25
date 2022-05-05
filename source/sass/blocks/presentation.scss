@@ -125,7 +125,7 @@
   }
 
   &:active {
-    color: $transparent-grey;
+    color: fade-out($white, 0.7);
   }
 
   @media (min-width: $tablet-width) {
