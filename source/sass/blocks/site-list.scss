@@ -75,6 +75,20 @@
   }
 }
 
+.main-header--inner .site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $black;
+  }
+}
+
+.main-header--inner .site-list__item {
+  @media (min-width: $desktop-width) {
+    &--current::before {
+      background-color: $green;
+    }
+  }
+}
+
 .site-list__item:last-child .site-list__link {
   @media (min-width: $tablet-width) {
     margin-right: 0;

@@ -38,6 +38,13 @@
 
     content: "";
   }
+
+  @media (min-width: $tablet-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .products__header {
@@ -48,6 +55,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0 0 82px 0;
+  }
 }
 
 .products__list {
