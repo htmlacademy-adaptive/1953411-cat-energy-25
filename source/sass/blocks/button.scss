@@ -14,10 +14,26 @@
   background-color: $green;
   text-transform: uppercase;
   color: $white;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: fade-out($white, 0.7);
+  }
 }
 
 .button--secondary {
   background-color: $basic-grey;
   text-transform: uppercase;
   color: $grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: fade-out($grey, 0.7);
+  }
 }
