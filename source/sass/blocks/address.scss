@@ -4,10 +4,6 @@
   padding: 26px 20px;
   margin: 0 auto;
 
-  &--inner {
-    background-color: $basic-grey;
-  }
-
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 199px;
@@ -18,7 +14,6 @@
     width: 565px;
     height: 198px;
     padding: 56px 80px;
-    background-color: $white;
   }
 }
 

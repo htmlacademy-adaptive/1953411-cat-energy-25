@@ -4,12 +4,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (min-width: $tablet-width) {
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-  }
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 294px 214px 52px 244px;
