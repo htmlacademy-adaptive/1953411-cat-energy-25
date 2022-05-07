@@ -13,9 +13,15 @@
   @media (min-width: $desktop-width) {
     min-height: 696px;
 
-    background-image: url("../img/cat-background.jpg");
-    background-position: 50vw;
-    background-size: auto 100%;
+    background-image:
+      url("../img/cat-background.jpg"),
+      linear-gradient(to right, $white 50%, #62a53b 50%);
+    background-position:
+      50vw,
+      left;
+    background-size:
+      auto 100%,
+      100%;
   }
 }
 
