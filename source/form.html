@@ -7,7 +7,7 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="body">
-    <header class="main-header">
+    <header class="main-header main-header--inner">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
           <span class="visually-hidden">Логотип CatEnergy.</span>
@@ -41,22 +41,24 @@
     </header>
     <main class="main-container main-container--inner">
       <section class="questionary">
-        <h1 class="questionary__title">Подбор программы</h1>
-        <p class="questionary__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="questionary__title-wrapper">
+          <h1 class="questionary__title">Подбор программы</h1>
+          <p class="questionary__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
         <form class="questionary__form main-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="answer-group__wrapper">
-            <fieldset class="main-form__group answer-group">
+          <div class="main-form__wrapper">
+            <fieldset class="main-form__group main-form__group--info answer-group">
               <legend class="visually-hidden">Информация о котике.</legend>
               <label class="answer-group__label">
-                <span class="answer-group__title">ИМЯ:*</span>
+                <span class="answer-group__title answer-group__title--name">ИМЯ:*</span>
                 <input class="answer-group__field" type="text" name="name" placeholder="барсик" required>
               </label>
               <label class="answer-group__label">
-                <span class="answer-group__title">Вес (кг):*</span>
+                <span class="answer-group__title answer-group__title--weight">Вес&nbsp;(кг):*</span>
                 <input class="answer-group__field" type="text" name="weight" placeholder="7" required>
               </label>
               <label class="answer-group__label">
-                <span class="answer-group__title">Возраст (лет):</span>
+                <span class="answer-group__title answer-group__title--age">Возраст&nbsp;(лет):</span>
                 <input class="answer-group__field" type="text" name="age" placeholder="7" required>
               </label>
             </fieldset>
@@ -79,46 +81,61 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="main-form__group answer-group">
-            <legend class="main-form__title">Контактные данные (владельца кота)</legend>
+          <h2 class="main-form__title-conteiner">
+            <div class="main-form__title-wrapper">
+              <div class="main-form__title">Контактные&nbsp;данные (владельца&nbsp;кота)</div>
+            </div>
+          </h2>
+          <fieldset class="main-form__group main-form__group--contacts answer-group">
+            <legend class="visually-hidden">Контактные данные.</legend>
             <div class="answer-group__wrapper">
-              <label class="answer-group__label" for="email">
-                <span class="answer-group__title">E-mail:*</span>
+              <label class="answer-group__label answer-group__label--email" for="email">
+                <span class="answer-group__title answer-group__title--email">E-mail:*</span>
                 <input class="answer-group__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </label>
-              <label class="answer-group__label">
-                <span class="answer-group__title">Телефон:*</span>
+              <label class="answer-group__label answer-group__label--phone">
+                <span class="answer-group__title answer-group__title--phone">Телефон:*</span>
                 <input class="answer-group__field" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
               </label>
             </div>
           </fieldset>
-          <fieldset class="main-form__group answer-group">
-            <legend class="main-form__title">Комментарий</legend>
+          <h2 class="main-form__title-conteiner">
+            <div class="main-form__title-wrapper main-form__title-wrapper--comment">
+              <div class="main-form__title">Комментарий</div>
+            </div>
+          </h2>
+          <fieldset class="main-form__group main-form__group--comment answer-group">
+            <legend class="visually-hidden">Комментарий.</legend>
             <label class="visually-hidden">Оставьте Ваш Комментарий.</label>
-            <textarea class="answer-group__field" id="comment" name="comment" rows="5" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            <textarea class="answer-group__field answer-group__field--comment" id="comment" name="comment" rows="5" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
-          <fieldset class="main-form__group answer-group">
-            <legend class="main-form__title">Дополнительно</legend>
+          <h2 class="main-form__title-conteiner">
+            <div class="main-form__title-wrapper main-form__title-wrapper--additional">
+              <div class="main-form__title">Дополнительно</div>
+            </div>
+          </h2>
+          <fieldset class="main-form__group main-form__group--additional answer-group">
+            <legend class="visually-hidden">Дополнительно.</legend>
             <div class="answer-group__wrapper answer-group__wrapper--smaller">
-              <label class="answer-group__label answer-group__label--mark">
+              <label class="answer-group__label answer-group__label--checkbox">
                 <input class="answer-group__checkbox visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
                 <span class="answer-group__checkbox-mark"></span>
-                <span class="answer-group__title">сахарозаменитель</span>
+                <span class="answer-group__title answer-group__title-additional">сахарозаменитель</span>
               </label>
-              <label class="answer-group__label answer-group__label--mark">
+              <label class="answer-group__label answer-group__label--checkbox">
                 <input class="answer-group__checkbox visually-hidden" type="checkbox" id="water" name="water">
                 <span class="answer-group__checkbox-mark"></span>
-                <span class="answer-group__title">питьевая вода</span>
+                <span class="answer-group__title answer-group__title-additional">питьевая вода</span>
               </label>
-              <label class="answer-group__label answer-group__label--mark" for="milk">
+              <label class="answer-group__label answer-group__label--checkbox" for="milk">
                 <input class="answer-group__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
                 <span class="answer-group__checkbox-mark"></span>
-                <span class="answer-group__title">молоко</span>
+                <span class="answer-group__title answer-group__title-additional">молоко</span>
               </label>
-              <label class="answer-group__label answer-group__label--mark">
+              <label class="answer-group__label answer-group__label--checkbox">
                 <input class="answer-group__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
                 <span class="answer-group__checkbox-mark"></span>
-                <span class="answer-group__title">витамины</span>
+                <span class="answer-group__title answer-group__title-additional">витамины</span>
               </label>
             </div>
           </fieldset>
