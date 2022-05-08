@@ -94,7 +94,7 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    margin-right: 79px;
+    margin: 0 79px 0 0;
     min-height: 288px;
   }
 }
