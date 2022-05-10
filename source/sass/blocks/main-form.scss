@@ -11,17 +11,17 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.main-form__container {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 569px 569px;
     column-gap: 80px;
 
-    width: 1440px;
-    margin: 0 111px 0 112px;
-
-    &--smaller {
-      grid-template-columns: 221px 221px 221px 221px;
-      column-gap: 104px;
-    }
+    padding: 0 111px 0 112px;
   }
 }
 
@@ -160,7 +160,7 @@
     padding: 0 110px;
 
     &--additional {
-      margin: 70px 0 61px;
+      margin: 70px auto 61px;
     }
   }
 }
