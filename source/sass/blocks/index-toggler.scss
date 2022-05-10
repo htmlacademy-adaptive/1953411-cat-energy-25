@@ -22,9 +22,11 @@
 }
 
 .index-toggler__description {
-  margin: 0 10px 0 11px;
+  width: 49px;
+
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   border-bottom: 1px dotted $light-grey;
   transition: border-bottom 1s;
@@ -41,7 +43,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    margin: 0 11px;
+
     font-size: 20px;
     line-height: 30px;
     text-align: center;

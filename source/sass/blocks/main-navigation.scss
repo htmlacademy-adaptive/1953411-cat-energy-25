@@ -24,8 +24,8 @@
 
 .main-navigation--closed .main-navigation__toggle::before {
   position: absolute;
-  left: 7px;
-  top: 13px;
+  right: 0;
+  top: 12px;
   width: 24px;
   height: 2px;
 
@@ -119,6 +119,8 @@
   .main-navigation--nojs .main-navigation__list {
     display: flex;
     flex-direction: column;
+
+    margin-top: 20px;
   }
 
   .main-navigation--nojs .site-list__link {

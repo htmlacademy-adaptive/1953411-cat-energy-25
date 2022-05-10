@@ -11,7 +11,7 @@
     bottom: 0;
 
     height: 1px;
-    background-color: #ebebeb;
+    background-color: $special-grey-2;
 
     content: "";
   }
@@ -28,8 +28,8 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 0 30px 40px 35px;
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px 39px;
   }
 }
 
@@ -82,7 +82,7 @@
     text-align: center;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     line-height: 21px;
   }
 }
@@ -165,7 +165,7 @@
     width: 30px;
     height: 2px;
 
-    background-color: #d3d3d3;
+    background-color: $light-2;
 
     content: "";
   }

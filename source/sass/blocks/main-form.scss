@@ -84,6 +84,7 @@
 
     &--program-type {
       margin: 0;
+      padding: 30px 28px;
     }
 
     &--contacts {
@@ -132,7 +133,7 @@
   padding: 0 20px;
 
   &--comment {
-    margin: 24px auto  38px;
+    margin: 24px auto 38px;
   }
 
   &--additional {
@@ -145,7 +146,7 @@
     padding: 0 69px;
 
     &--comment {
-      margin: 65px auto  76px;
+      margin: 65px auto 76px;
     }
 
     &--additional {
@@ -196,15 +197,18 @@
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 32px;
+  width: 320px;
+  margin: 0 auto 32px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
 
+    width: 768px;
     margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
     margin-bottom: 82px;
   }
 }
