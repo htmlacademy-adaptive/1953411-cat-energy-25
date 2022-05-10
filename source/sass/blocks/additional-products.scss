@@ -1,32 +1,88 @@
 .additional-products {
-  padding: 25px 20px 35px;
+  width: 100%;
+}
+
+.additional-products__title-conteiner {
+  position: relative;
+
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $green;
+
+    content: "";
+    z-index: -1;
+  }
+}
+
+.additional-products__title-wrapper {
+  width: 320px;
+  margin: 24px auto 35px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 68px 30px 76px;
+    width: 768px;
+    margin: 68px auto 80px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 75px 110px 86px;
+    width: 1440px;
+    margin: 74px auto 80px;
+    padding: 0 110px;
   }
 }
 
 .additional-products__title {
-  padding: 0;
-  margin: 0;
+  display: inline-block;
+
+  padding: 0 22px 0;
+  margin: 0 0 0 -22px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36px 0;
+    margin-left: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -36px;
+  }
 }
 
 .additional-products__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px 76px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+
+    width: 1440px;
+    padding: 0 110px 86px;
   }
 }
 
 .additional-products__list {
-  margin: 0;
+  margin: 0 0 35px;
   padding: 0;
 
   list-style-type: none;
@@ -34,26 +90,42 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     min-height: 556px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    margin-right: 79px;
+    margin: 0 79px 0 0;
     min-height: 288px;
   }
 }
 
 .additional-products__item {
+  position: relative;
+
+  padding: 13px 0 19px;
+
+  border-bottom: 1px solid $light-grey;
+
+  &:first-child {
+    border-top: 1px solid $light-grey;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 139px;
-    padding: 26px 38px 28px;
-    margin-bottom: 69px;
+    padding: 26px 38px 27px;
+
+    border-left: 1px solid $light-grey;
+    border-right: 1px solid $light-grey;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 72px;
-    padding: 0;
+    padding: 15px 0 16px;
     margin-bottom: 0;
+
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -90,6 +162,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
+  text-align: center;
 
   &::before {
     position: absolute;
@@ -106,6 +179,8 @@
     padding-top: 0;
     padding-left: 345px;
 
+    text-align: start;
+
     &::before {
       position: absolute;
       top: -14px;
@@ -120,6 +195,8 @@
     @media (min-width: $desktop-width) {
       padding-top: 129px;
       padding-left: 0;
+
+      text-align: center;
 
       &::before {
         top: 0;

@@ -7,7 +7,7 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="body">
-    <header class="main-header">
+    <header class="main-header main-header--inner">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
           <span class="visually-hidden">Логотип CatEnergy.</span>
@@ -42,7 +42,9 @@
     <main class="main-container main-container--inner">
       <h1 class="visually-hidden">Каталог.</h1>
       <section class="products">
-        <h2 class="products__header">Каталог продукции</h2>
+        <div class="products__header-wrapper">
+          <h2 class="products__header">Каталог продукции</h2>
+        </div>
         <ul class="products__list">
           <li class="products__item product-card">
             <a class="product-card__link" href="#">
@@ -149,7 +151,7 @@
             </dl>
             <button class="product-card__button button button--primary" type="button">заказать</button>
           </li>
-          <li class="products__item product-card">
+          <li class="products__item product-card product-card--more">
             <a class="product-card__title" href="#">Показать еще 100500 товаров</a>
             <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
             <button class="product-card__button button button--secondary" type="button">показать все</button>
@@ -157,7 +159,11 @@
         </ul>
       </section>
       <section class="additional-products">
-        <h2 class="additional-products__title">Дополнительные товары</h2>
+        <h2 class="additional-products__title-conteiner">
+          <div class="additional-products__title-wrapper">
+            <div class="additional-products__title">Дополнительные товары</div>
+          </div>
+        </h2>
         <div class="additional-products__wrapper">
           <ul class="additional-products__list">
             <li class="additional-products__item additional-product-card">
@@ -192,9 +198,11 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Карта и адрес.</h2>
-        <div class="contacts__container address address--inner">
-          <p class="address__call">приглашаем к сотрудничеству дилеров!</p>
-          <address class="address__description">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <div class="contacts__container-wrapper contacts__container-wrapper--inner">
+          <div class="contacts__container address">
+            <p class="address__call">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="address__description">ул. Большая Конюшенная, д. 19/8<br><span class="address__city">Санкт-Петербург</span></address>
+          </div>
         </div>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.473852599556!2d30.31763476243655!3d59.938952522879696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1648976397997!5m2!1sru!2sru" width="320" height="362" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
@@ -231,13 +239,10 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__title">HTML Academy</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34" viewBox="0 0 27 34" fill="curentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"/></svg>
-            <span class="visually-hidden">Логотип HTML Academy.</span>
-          </a>
-        </div>
+        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__title">HTML Academy</span>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="curentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"/></svg>
+        </a>
       </div>
     </footer>
     <script src="./js/skript.js"></script>

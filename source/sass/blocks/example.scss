@@ -14,7 +14,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      top: 0;
+      top: -1px;
 
       height: 1px;
       background-color: #e6e6e6;
@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 45px 30px 56px;
+    padding: 43px 29px 56px 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,6 +59,8 @@
 .example__container {
   display: flex;
   flex-direction: column;
+
+  margin-left: -1px;
 }
 
 .example__title {
@@ -88,6 +90,7 @@
 
   font-family: $secondary-font;
   color: $grey;
+  overflow-wrap: normal;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -127,7 +130,7 @@
   @media (min-width: $tablet-width) {
     width: 592px;
     height: 511px;
-    margin-bottom: 25px;
+    margin-bottom: 29px;
   }
 }
 

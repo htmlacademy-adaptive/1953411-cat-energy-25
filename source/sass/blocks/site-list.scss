@@ -34,6 +34,10 @@
 
       content: "";
     }
+
+    &:last-child::before {
+      right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +63,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 18px 0 10px;
+    padding: 18px 0 8px;
     margin-right: 35px;
 
     font-size: 18px;
@@ -72,6 +76,20 @@
     font-size: 20px;
     line-height: 30px;
     color: $white;
+  }
+}
+
+.main-header--inner .site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $black;
+  }
+}
+
+.main-header--inner .site-list__item {
+  @media (min-width: $desktop-width) {
+    &--current::before {
+      background-color: $green;
+    }
   }
 }
 

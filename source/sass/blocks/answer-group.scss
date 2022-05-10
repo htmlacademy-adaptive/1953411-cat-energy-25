@@ -3,44 +3,193 @@
   flex-direction: column;
 }
 
-.answer-group__wrapper {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 569px 569px;
-    column-gap: 80px;
+.answer-group__label {
+  display: flex;
+  position: relative;
+  align-items: center;
 
-    &--smaller {
-      grid-template-columns: 221px 221px 221px 221px;
-      column-gap: 104px;
+  margin-bottom: 14px;
+
+  &--mark,
+  &--checkbox {
+    padding-left: 45px;
+    margin-bottom: 25px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--email {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 15px;
+      top: 16px;
+
+      width: 20px;
+      height: 14px;
+
+      background-image: url("../img/icon-email.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 14px;
+
+      content: "";
+    }
+  }
+
+  &--phone {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 13px;
+      top: 16px;
+
+      width: 20px;
+      height: 20px;
+
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+
+      content: "";
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    &--mark,
+    &--checkbox {
+      margin-bottom: 23px;
+      padding-left: 60px;
+    }
+
+    &--checkbox {
+      margin-bottom: 0;
+    }
+
+    &--email {
+      &::after {
+        right: 19px;
+        top: 19px;
+      }
+    }
+
+    &--phone {
+      &::after {
+        right: 17px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    &--mark {
+      margin-bottom: 23px;
+    }
+
+    &--checkbox {
+      margin-bottom: 0;
+    }
+
+    &--email {
+      margin: 0 78px 0 0;
     }
   }
 }
 
-.answer-group__label {
-  display: flex;
-  position: relative;
+.answer-group__title {
+  margin-right: 13px;
 
-  &--mark {
-    padding-left: 45px;
+  color: $grey;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--name {
+      width: 50px;
+    }
+
+    &--weight {
+      width: 80px;
+    }
+
+    &--age {
+      width: 120px;
+    }
+
+    &--email {
+      width: 63px;
+      margin: 0 18px 0 3px;
+    }
+
+    &--phone {
+      width: 85px;
+      margin-right: 14px;
+    }
+
+    &-additional {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--weight {
+      margin-right: 14px;
+    }
+
+    &--email {
+      margin-right: 20px;
+    }
+
+    &--phone {
+      margin-right: 15px;
+    }
   }
 }
 
-.answer-group__title {
-  color: $grey;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
 .answer-group__field {
+  width: 50%;
+  height: 45px;
   flex-grow: 1;
-  padding: 14px;
+  padding: 14px 14px 12px;
 
   color: $grey;
   font-size: 16px;
   text-transform: uppercase;
+  border: 1px solid $light-grey;
+
+  &--comment {
+    width: 100%;
+    height: 150px;
+    padding-top: 9px;
+
+    line-height: 18px;
+  }
 
   &::placeholder {
+    font-family: $primary-font;
     color: $grey;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding: 12px 19px 8px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &--comment {
+      height: 174px;
+    }
   }
 }
 
@@ -48,42 +197,99 @@
   position: absolute;
   left: 0;
   bottom: -6px;
+
   width: 30px;
   height: 30px;
 
   border-radius: 50%;
   border: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    bottom: -4px;
+
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .answer-group__radio:checked + .answer-group__radio-mark::before {
   position: absolute;
-  left: 8px;
-  top: 8px;
+  left: 7px;
+  top: 7px;
+
   width: 14px;
   height: 14px;
 
   border-radius: 50%;
   background-color: $green;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    left: 10px;
+    top: 10px;
+
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .answer-group__checkbox-mark {
   position: absolute;
   left: 0;
-  bottom: -4px;
-  width: 26px;
-  height: 26px;
+  bottom: -6px;
+
+  width: 30px;
+  height: 30px;
 
   border: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    bottom: -5px;
+
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .answer-group__checkbox:checked + .answer-group__checkbox-mark::before {
   position: absolute;
-  left: 4px;
-  top: 5px;
+  left: 5px;
+  top: 7px;
+
   width: 18px;
   height: 14px;
 
   background-image: url("../img/arrow.svg");
+  background-size: 18px 14px;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    left: 7px;
+    top: 10px;
+
+    width: 24px;
+    height: 19px;
+
+    background-size: 24px 19px;
+  }
+}
+
+.answer-group__wrapper {
+  @media (min-width: $tablet-width) {
+    &--smaller {
+      display: grid;
+      grid-template-columns: 221px 221px;
+      column-gap: 123px;
+      row-gap: 42px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    &--smaller {
+      column-gap: 104px;
+    }
+  }
 }

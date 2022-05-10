@@ -22,15 +22,19 @@
 }
 
 .index-toggler__description {
-  margin: 0 10px 0 11px;
+  width: 49px;
+
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   border-bottom: 1px dotted $light-grey;
   transition: border-bottom 1s;
 
+  cursor: pointer;
+
   &:hover {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid fade-out($black, 0.6);
     transition: border-bottom 1s;
   }
 
@@ -39,7 +43,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    margin: 0 11px;
+
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -138,17 +143,17 @@
   background-color: $green;
   box-shadow: inset 0 0 0 12px $white;
   border: 1px solid $light-grey;
-  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0 1px 3px fade-out($black, 0.84));
 
   appearance: none;
   cursor: pointer;
 
   &:hover {
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    filter: drop-shadow(0 2px 4px fade-out($black, 0.81));
   }
 
   &:active {
-    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 3px 5px fade-out($black, 0.8));
     border-color: $green;
   }
 }

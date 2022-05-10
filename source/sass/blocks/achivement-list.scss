@@ -16,7 +16,7 @@
 
   width: 124px;
   height: 56px;
-  padding: 13px 0 17px;
+  padding: 14px 0 16px;
   margin: 0 0 34px;
 
   border-radius: 3px;
@@ -49,24 +49,27 @@
 .achievement-list__description {
   position: absolute;
   left: 18px;
-  top: 47px;
+  top: 45px;
 
   width: 87px;
   margin: 0;
+  padding: 0 6px 0 4px;
 
   text-align: center;
   font-family: $secondary-font;
-  font-weight: 12px;
+  font-size: 12px;
   line-height: 12px;
   color: $grey;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    left: 24px;
-    top: 63px;
+    left: 23px;
+    top: 64px;
 
     width: 114px;
+    padding: 0 9px 0 8px;
 
+    font-size: 14px;
     background-color: $white;
   }
 }
@@ -76,6 +79,7 @@
     left: 10px;
 
     width: 142px;
+    padding: 0 8px 0 7px;
   }
 }
 
@@ -91,7 +95,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 174px;
-    margin: 0 0 0 auto;
+    margin: 0 1px 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,14 +107,13 @@
 
 .achievement-list__total-text,
 .achievement-list__total-number {
-  padding-top: 9px;
-
-
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 10px 1px 0 0;
+
     font-size: 20px;
     line-height: 20px;
     text-align: end;
@@ -123,6 +126,8 @@
 }
 
 .achievement-list__total-number {
+  margin-left: 5px;
+
   @media (min-width: $desktop-width) {
     text-align: left;
     margin-left: 63px;

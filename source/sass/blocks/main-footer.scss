@@ -16,7 +16,7 @@
     justify-content: space-between;
     width: 768px;
     min-height: 147px;
-    padding: 58px 30px 55px;
+    padding: 59px 31px 55px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,10 +28,10 @@
 
 .main-footer__link {
   align-self: center;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin: 1px 0 0;
   }
 }
 
@@ -47,10 +47,10 @@
 
 .main-footer__social {
   width: 100%;
-  margin: 20px 0;
+  margin: 21px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: -1px;
   }
 }
 
