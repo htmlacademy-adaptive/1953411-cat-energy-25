@@ -43,8 +43,8 @@
 
 .products__header {
   width: 320px;
-  padding: 27px 20px 32px;
-  margin: 0 auto;
+  padding: 27px 20px 42px;
+  margin: 1px auto 0;
 
   font-weight: 400;
   font-size: 36px;
@@ -62,7 +62,7 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 110px;
-    margin-bottom: 84px;
+    margin: 48px 0 84px;
   }
 }
 
@@ -89,7 +89,7 @@
     column-gap: 80px;
 
     width: 1440px;
-    padding: 48px 110px 0;
+    padding: 0 110px 0;
   }
 }
 

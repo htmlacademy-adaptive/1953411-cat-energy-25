@@ -8,7 +8,7 @@
   position: relative;
   align-items: center;
 
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   &--mark,
   &--checkbox {
@@ -157,8 +157,9 @@
 
 .answer-group__field {
   width: 50%;
+  height: 45px;
   flex-grow: 1;
-  padding: 14px;
+  padding: 14px 14px 12px;
 
   color: $grey;
   font-size: 16px;
@@ -167,6 +168,10 @@
 
   &--comment {
     width: 100%;
+    height: 150px;
+    padding-top: 9px;
+
+    line-height: 18px;
   }
 
   &::placeholder {
@@ -176,10 +181,15 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 10px 19px;
+    height: 52px;
+    padding: 12px 19px 8px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &--comment {
+      height: 174px;
+    }
   }
 }
 
