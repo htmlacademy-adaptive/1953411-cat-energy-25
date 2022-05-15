@@ -109,6 +109,8 @@
   font-size: 16px;
   text-transform: uppercase;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -193,7 +195,8 @@
   }
 }
 
-.answer-group__radio-mark {
+.answer-group__radio-mark,
+.answer-group__checkbox-mark {
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -201,14 +204,23 @@
   width: 30px;
   height: 30px;
 
-  border-radius: 50%;
   border: 1px solid $light-grey;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
-    bottom: -4px;
+    bottom: -5px;
 
     width: 40px;
     height: 40px;
+  }
+}
+
+.answer-group__radio-mark {
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    bottom: -4px;
   }
 }
 
@@ -233,24 +245,6 @@
   }
 }
 
-.answer-group__checkbox-mark {
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid $light-grey;
-
-  @media (min-width: $tablet-width) {
-    bottom: -5px;
-
-    width: 40px;
-    height: 40px;
-  }
-}
-
 .answer-group__checkbox:checked + .answer-group__checkbox-mark::before {
   position: absolute;
   left: 5px;
@@ -271,6 +265,20 @@
     height: 19px;
 
     background-size: 24px 19px;
+  }
+}
+
+.answer-group__label:hover .answer-group__radio-mark,
+.answer-group__label:hover .answer-group__checkbox-mark {
+  border-color: $light-grey-2;
+}
+
+.answer-group__label--disabled {
+  opacity: 0.3;
+
+  & .answer-group__radio-mark,
+  & .answer-group__title {
+    cursor: default;
   }
 }
 

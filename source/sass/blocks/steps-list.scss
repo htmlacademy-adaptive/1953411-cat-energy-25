@@ -2,9 +2,13 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  counter-reset: item;
 }
 
 .steps-list__item {
+  position: relative;
+
   height: 60px;
   padding: 0;
   padding-left: 80px;
@@ -13,14 +17,96 @@
   background-size: 60px 60px;
   background-position: 0 0;
 
+  counter-increment: item;
+
   @media (min-width: $tablet-width) {
     height: 280px;
     padding-left: 0;
     padding-top: 150px;
 
-    background-position:
-      0 40px,
-      127px 40px;
+    background-size: 80px 80px;
+    background-position: 0 40px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 127px;
+
+      width: 120px;
+      height: 280px;
+
+      font-family: $primary-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+
+      content: counter(item);
+      z-index: -1;
+    }
+  }
+}
+
+.steps-list__item--leaf {
+  background-image: url("../img/leaf-mobile.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/leaf-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/leaf-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/leaf-tablet@2x.png");
+    }
+  }
+}
+
+.steps-list__item--water {
+  background-image: url("../img/water-mobile.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/water-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/water-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/water-tablet@2x.png");
+    }
+  }
+}
+
+.steps-list__item--cultery {
+  background-image: url("../img/cultery-mobile.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cultery-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cultery-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cultery-tablet@2x.png");
+    }
+  }
+}
+
+.steps-list__item--clock {
+  background-image: url("../img/clock-mobile.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/clock-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/clock-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/clock-tablet@2x.png");
+    }
   }
 }
 
@@ -35,61 +121,5 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-  }
-}
-
-.steps-list__item--leaf {
-  background-image: url("../img/leaf.png");
-
-  @media (min-width: $tablet-width) {
-    background-image:
-      url("../img/leaf.png"),
-      url("../img/number-1.png");
-    background-size:
-      80px 80px,
-      71px 227px;
-  }
-}
-
-.steps-list__item--water {
-  background-image: url("../img/water.png");
-
-  @media (min-width: $tablet-width) {
-    background-image:
-      url("../img/water.png"),
-      url("../img/number-2.png");
-    background-size:
-      80px 80px,
-      113px 229px;
-  }
-}
-
-.steps-list__item--cutlery {
-  background-image: url("../img/cultery.png");
-
-  @media (min-width: $tablet-width) {
-    background-image:
-      url("../img/cultery.png"),
-      url("../img/number-3.png");
-    background-size:
-      80px 80px,
-      112px 232px;
-  }
-}
-
-.steps-list__item--clock {
-  background-image: url("../img/clock.png");
-
-  @media (min-width: $tablet-width) {
-    background-image:
-      url("../img/clock.png"),
-      url("../img/number-4.png");
-    background-size:
-      80px 80px,
-      121px 227px;
-
-    & .steps-list__text {
-      width: 245px;
-    }
   }
 }
