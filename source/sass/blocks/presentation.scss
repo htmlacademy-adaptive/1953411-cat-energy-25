@@ -1,9 +1,17 @@
 .presentation {
-  background-image: url("../img/cat-background-mobile.jpg");
+  background-image:
+    url("../img/cat-background-mobile.jpg"),
+    linear-gradient(to bottom, $green-2 302px, $white 303px);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100% auto;
   color: $white;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../img/cat-background-mobile@2x.jpg"),
+      linear-gradient(to bottom, $green-2 302px, $white 303px);
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -14,14 +22,20 @@
     min-height: 696px;
 
     background-image:
-      url("../img/cat-background.jpg"),
-      linear-gradient(to right, $white 50%, $green-2 50%);
+      url("../img/cat-background-desktop.jpg"),
+      linear-gradient(to right, $white 50%, $green 50%);
     background-position:
       50vw,
       left;
     background-size:
       auto 100%,
       100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/cat-background-desktop@2x.jpg"),
+        linear-gradient(to right, $white 50%, $green-2 50%);
+    }
   }
 }
 

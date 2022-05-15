@@ -29,9 +29,6 @@
 .main-header__logo {
   width: 34px;
   height: 38px;
-  background-image: url("../img/logo-mobile.svg");
-  background-size: 34px 38px;
-  background-repeat: no-repeat;
 
   &:hover {
     opacity: 0.8;
@@ -44,7 +41,7 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
-    background-image: url("../img/logo-desktop.svg");
+    // background-image: url("../img/logo-desktop.svg");
     background-size: 174px 52px;
   }
 

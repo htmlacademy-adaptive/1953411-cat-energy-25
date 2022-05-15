@@ -131,24 +131,36 @@
 
 .additional-products__offer {
   padding: 58px 61px 43px 58px;
-  background-image: url("../img/special-offer-cat.jpg");
+
+  background-image: url("../img/special-offer-cat-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 280px 290px;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/special-offer-cat-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 71px 124px 69px 77px;
     width: 707px;
     min-height: 200px;
-    background-size: cover;
-    background-position: center;
+
+    background-image: url("../img/special-offer-cat-tablet.jpg");
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/special-offer-cat-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 56px 42px 42px;
     width: 245px;
     min-height: 289px;
-    background-size: auto 100%;
-    background-position: right;
+
+    background-image: url("../img/special-offer-cat-mobile.jpg");
+    background-position: center -35px center;
   }
 }
 
