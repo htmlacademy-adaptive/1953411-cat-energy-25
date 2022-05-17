@@ -27,21 +27,11 @@
 }
 
 .main-header__logo {
-  width: 34px;
   height: 38px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
-    // background-image: url("../img/logo-desktop.svg");
     background-size: 174px 52px;
   }
 
@@ -49,23 +39,5 @@
     width: 202px;
     height: 59px;
     background-size: 202px 59px;
-  }
-}
-
-.main-header__logo-text {
-  align-self: center;
-
-  margin: 9px auto 0 56px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

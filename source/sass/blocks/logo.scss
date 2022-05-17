@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+
+  &:hover .logo__mobile,
+  &:hover .logo__tablet {
+    fill-opacity: 0.8;
+  }
+
+  &:active .logo__mobile,
+  &:active .logo__tablet {
+    fill-opacity: 0.6;
+  }
+}
+
+.logo__mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.logo__mobile--text {
+  align-self: center;
+
+  margin: 9px auto 0 56px;
+}

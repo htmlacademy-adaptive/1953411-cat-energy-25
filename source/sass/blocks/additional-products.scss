@@ -160,7 +160,11 @@
     min-height: 289px;
 
     background-image: url("../img/special-offer-cat-mobile.jpg");
-    background-position: center -35px center;
+    background-position: right top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/special-offer-cat-mobile@2x.jpg");
+    }
   }
 }
 

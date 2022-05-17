@@ -23,7 +23,7 @@
 
     background-image:
       url("../img/cat-background-desktop.jpg"),
-      linear-gradient(to right, $white 50%, $green 50%);
+      linear-gradient(to right, $white 50vw, $green 50vw);
     background-position:
       50vw,
       left;
@@ -34,7 +34,7 @@
     @media (min-resolution: 2dppx) {
       background-image:
         url("../img/cat-background-desktop@2x.jpg"),
-        linear-gradient(to right, $white 50%, $green-2 50%);
+        linear-gradient(to right, $white 50vw, $green 50vw);
     }
   }
 }
