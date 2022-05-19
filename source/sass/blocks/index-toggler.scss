@@ -158,3 +158,28 @@
     border-color: $green;
   }
 }
+
+.index-toggler__slider::-moz-range-thumb {
+  position: relative;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background-color: $green;
+  box-shadow: inset 0 0 0 12px $white;
+  border: 1px solid $light-grey;
+  filter: drop-shadow(0 1px 3px fade-out($black, 0.84));
+
+  appearance: none;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px fade-out($black, 0.81));
+  }
+
+  &:active {
+    filter: drop-shadow(0 3px 5px fade-out($black, 0.8));
+    border-color: $green;
+  }
+}

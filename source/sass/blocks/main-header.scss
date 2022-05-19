@@ -41,3 +41,12 @@
     margin-top: 0;
   }
 }
+
+
+.main-header--inner .main-header__logo {
+  margin-top: -3px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+  }
+}

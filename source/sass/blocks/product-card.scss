@@ -8,7 +8,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 1px;
+    bottom: 0;
 
     height: 1px;
     background-color: $special-grey-2;
@@ -35,12 +35,12 @@
 
 .product-card__link {
   position: absolute;
-  top: 20px;
+  top: 19px;
   left: 20px;
 
   @media (min-width: $tablet-width) {
-    top: -45px;
-    left: 82px;
+    top: -73px;
+    left: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,22 +49,9 @@
   }
 }
 
-.product-card__image {
-  @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 200px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 172px;
-    height: 196px;
-  }
-}
-
 .product-card__title {
   width: 76px;
-  margin-left: 140px;
-  margin-bottom: 14px;
+  margin: 0 0 14px 140px;
 
   font-size: 16px;
   line-height: 20px;
@@ -84,7 +71,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 164px;
-    margin-bottom: 16px;
+    margin: 0 8px 16px 10px;
 
     line-height: 21px;
   }
@@ -99,6 +86,11 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin: 0 auto 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 166px;
+    margin-left: 3px;
   }
 }
 
@@ -127,6 +119,10 @@
   color: $grey;
   text-align: end;
 
+  &:first-of-type {
+    margin-right: 3px;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 8px 0 7px;
 
@@ -143,9 +139,13 @@
 }
 
 .product-card--more {
+  &::after {
+    bottom: 1px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 81px;
-    padding-bottom: 37px;
+    padding: 0 35px 36px 36px;
 
     background-color: $white;
     border: 2px solid $basic-grey;
@@ -157,7 +157,7 @@
 
   width: 100%;
   margin: 0 auto 8px;
-  padding-top: 58px;
+  padding-top: 59px;
 
   color: $dark;
   text-align: center;
@@ -165,7 +165,7 @@
   &::before,
   &::after {
     position: absolute;
-    top: 20px;
+    top: 19px;
     left: 125px;
 
     width: 30px;
@@ -192,23 +192,34 @@
 
   @media (min-width: $tablet-width) {
     width: 134px;
-    padding-top: 159px;
+    padding-top: 160px;
     margin-bottom: 25px;
 
     line-height: 22px;
 
     &::before,
     &::after {
-      top: 82px;
-      left: 36px;
+      top: 81px;
+      left: 37px;
 
       width: 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 159px;
+    margin-bottom: 24px;
+
+    &::before,
+    &::after {
+      top: 79px;
+      left: 37px;
     }
   }
 }
 
 .product-card--more .product-card__description {
-  margin: 0 auto 21px;
+  margin: 0 auto 20px;
 
   text-align: center;
 

@@ -21,13 +21,15 @@
   @media (min-width: $tablet-width) {
     position: relative;
 
+    margin-right: 37px;
+
     background-color: transparent;
 
     &--current::before {
       position: absolute;
       bottom: -2px;
       left: 0;
-      right: 35px;
+      right: 0;
 
       height: 2px;
       background-color: $green;
@@ -41,6 +43,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 35px;
+
     &--current::before {
       background-color: $white;
       bottom: 1px;
@@ -65,7 +69,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 18px 0 8px;
-    margin-right: 36px;
 
     font-size: 18px;
     line-height: 24px;
@@ -87,6 +90,12 @@
 }
 
 .main-header--inner .site-list__item {
+  @media (min-width: $tablet-width) {
+    &--current::before {
+      bottom: 0;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &--current::before {
       background-color: $green;
@@ -94,7 +103,17 @@
   }
 }
 
-.site-list__item:last-child .site-list__link {
+.site-list__item:first-child {
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 36px;
+  }
+}
+
+.site-list__item:last-child {
   @media (min-width: $tablet-width) {
     margin-right: 0;
   }
