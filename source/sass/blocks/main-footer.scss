@@ -33,6 +33,10 @@
   @media (min-width: $tablet-width) {
     margin: 1px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 4px 0 0;
+  }
 }
 
 .main-footer__logo {

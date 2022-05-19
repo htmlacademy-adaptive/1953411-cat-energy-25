@@ -72,6 +72,10 @@
     font-size: 14px;
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
 }
 
 .achievement-list__item:nth-child(2) .achievement-list__description {
@@ -115,7 +119,6 @@
     margin: 10px 1px 0 0;
 
     font-size: 20px;
-    line-height: 20px;
     text-align: end;
   }
 
@@ -130,6 +133,6 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    margin-left: 63px;
+    margin-left: 66px;
   }
 }

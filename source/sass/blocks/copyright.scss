@@ -18,6 +18,10 @@
     margin-top: -2px;
     width: 163px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
+  }
 }
 
 .copyright__title {
