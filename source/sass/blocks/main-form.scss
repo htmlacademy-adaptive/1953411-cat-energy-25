@@ -134,12 +134,15 @@
       top: 23px;
     }
 
-    &--comment {
+    &--comment,
+    &--additional {
       &::before {
         top: 22px;
       }
     }
+  }
 
+  @media (min-width: $desktop-width) {
     &--additional {
       &::before {
         top: 23px;

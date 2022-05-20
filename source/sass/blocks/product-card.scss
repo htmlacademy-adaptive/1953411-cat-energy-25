@@ -49,6 +49,21 @@
   }
 }
 
+.product-card__image {
+  width: 140px;
+  height: 112px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 200px;
+  }
+}
+
 .product-card__title {
   width: 76px;
   margin: 0 0 14px 140px;
