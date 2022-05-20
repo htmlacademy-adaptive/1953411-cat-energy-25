@@ -205,6 +205,12 @@
   text-transform: uppercase;
   border: 1px solid $special-grey;
 
+  outline: none;
+
+  &--error {
+    border-color: $error-color;
+  }
+
   &--email,
   &--phone {
     padding: 15px 15px 11px;
@@ -321,6 +327,14 @@
 
     background-size: 24px 19px;
   }
+}
+
+.answer-group__label:hover .answer-group__field {
+  border-color: $light-grey;
+}
+
+.answer-group__label:active .answer-group__field {
+  border-color: $grey;
 }
 
 .answer-group__label:hover .answer-group__radio-mark,
