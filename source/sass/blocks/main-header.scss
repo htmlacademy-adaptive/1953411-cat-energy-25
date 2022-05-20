@@ -44,9 +44,17 @@
 
 
 .main-header--inner .main-header__logo {
-  margin-top: -3px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: 2px;
+    margin-top: 1px;
   }
+}
+
+.main-header--inner .main-navigation__toggle {
+  top: 1px;
 }
