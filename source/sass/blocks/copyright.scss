@@ -18,6 +18,10 @@
     margin-top: -2px;
     width: 163px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
+  }
 }
 
 .copyright__title {
@@ -29,7 +33,7 @@
   color: $grey;
 
   @media (min-width: $tablet-width) {
-    width: 114px;
-    margin-right: 22px;
+    width: 116px;
+    margin-right: 20px;
   }
 }

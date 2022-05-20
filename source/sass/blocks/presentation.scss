@@ -19,22 +19,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 696px;
+    min-height: 694px;
 
     background-image:
       url("../img/cat-background-desktop.jpg"),
-      linear-gradient(to right, $white 50vw, $green 50vw);
+      linear-gradient(to right, $white 50%, $green-2 50%);
     background-position:
-      50vw,
+      left 50vw top -2px,
       left;
     background-size:
-      auto 100%,
+      auto 696px,
       100%;
 
     @media (min-resolution: 2dppx) {
       background-image:
         url("../img/cat-background-desktop@2x.jpg"),
-        linear-gradient(to right, $white 50vw, $green 50vw);
+        linear-gradient(to right, $white 50vw, $green-2 50vw);
     }
   }
 }
@@ -75,8 +75,7 @@
 
   @media (min-width: $tablet-width) {
     width: 500px;
-    margin-left: 87px;
-    margin-bottom: 40px;
+    margin: 0 0 41px 87px;
 
     font-size: 60px;
     line-height: 60px;
@@ -84,7 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin: 83px 0 40px 80px;
   }
 }
 
@@ -120,6 +119,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 201px;
+    left: 29px;
 
     width: 709px;
     height: 609px;

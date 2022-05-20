@@ -32,12 +32,29 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
-    background-size: 174px 52px;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    background-size: 202px 59px;
+    margin-top: 0;
   }
+}
+
+
+.main-header--inner .main-header__logo {
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
+  }
+}
+
+.main-header--inner .main-navigation__toggle {
+  top: 1px;
 }

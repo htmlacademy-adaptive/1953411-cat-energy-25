@@ -3,7 +3,7 @@
 
   min-height: 700px;
 
-  background-color: #eaeaea;
+  background-color: $special-grey-3;
 
   @media (min-width: $tablet-width) {
     min-height: 1080px;
@@ -17,7 +17,7 @@
       top: -1px;
 
       height: 1px;
-      background-color: #e6e6e6;
+      background-color: $special-grey-0;
 
       content: "";
     }
@@ -52,7 +52,7 @@
     grid-template-columns: 50% 50%;
 
     width: 1440px;
-    padding: 43px 110px 70px;
+    padding: 0 109px 65px 111px;
   }
 }
 
@@ -61,6 +61,12 @@
   flex-direction: column;
 
   margin-left: -1px;
+}
+
+.example__container ~ .example__container {
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+  }
 }
 
 .example__title {
@@ -79,7 +85,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin: 43px 0 146px;
   }
 }
 
@@ -129,8 +135,12 @@
 
   @media (min-width: $tablet-width) {
     width: 592px;
-    height: 511px;
+    min-height: 511px;
     margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -164,11 +174,16 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-before-tablet.png");
-    background-size: auto 505px;
+    background-size: auto 499px;
+    background-position: left top 5px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-before-tablet@2x.png");
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: left top -1px;
   }
 }
 
@@ -185,11 +200,15 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/cat-after-tablet.png");
-    background-position: right top;
+    background-position: right top 5px;
     background-size: auto 511px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-after-tablet@2x.png");
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: right top -1px;
   }
 }

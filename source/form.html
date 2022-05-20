@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="favicon.ico" rel="icon">
     <link href="img/favicons/favicon.svg" rel="icon" type="image/svg+xml">
     <link href="img/favicons/apple.png" rel="apple-touch-icon">
@@ -18,10 +18,13 @@
             <use xlink:href="img/sprite.svg#icon-mobile"></use>
           </svg>
           <svg class="logo__mobile logo__mobile--text" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#icon-catenergy"></use>
+            <use xlink:href="img/sprite.svg#icon-catenergy-header"></use>
           </svg>
           <svg class="logo__tablet" width="202" height="60" viewBox="0 0 202 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#icon-tablet"></use>
+          </svg>
+          <svg class="logo__desktop" width="202" height="60" viewBox="0 0 202 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#icon-desktop"></use>
           </svg>
         </a>
         <nav class="main-navigation main-navigation--closed main-navigation--nojs">
@@ -65,11 +68,11 @@
                 </label>
                 <label class="answer-group__label">
                   <span class="answer-group__title answer-group__title--weight">Вес&nbsp;(кг):*</span>
-                  <input class="answer-group__field" type="text" name="weight" placeholder="7" required>
+                  <input class="answer-group__field answer-group__field--weight" type="text" name="weight" placeholder="7" required>
                 </label>
                 <label class="answer-group__label">
                   <span class="answer-group__title answer-group__title--age">Возраст&nbsp;(лет):</span>
-                  <input class="answer-group__field" type="text" name="age" placeholder="7" required>
+                  <input class="answer-group__field answer-group__field--age" type="text" name="age" placeholder="7" required>
                 </label>
               </fieldset>
               <fieldset class="main-form__group main-form__group--program-type answer-group">
@@ -92,31 +95,31 @@
               </fieldset>
             </div>
           </div>
-          <h2 class="main-form__title-conteiner">
+          <div class="main-form__title-conteiner">
             <div class="main-form__title-wrapper">
-              <div class="main-form__title">Контактные&nbsp;данные (владельца&nbsp;кота)</div>
+              <h2 class="main-form__title">Контактные&nbsp;данные (владельца&nbsp;кота)</h2>
             </div>
-          </h2>
+          </div>
           <div class="main-form__wrapper">
             <fieldset class="main-form__group main-form__group--contacts answer-group">
               <legend class="visually-hidden">Контактные данные.</legend>
               <div class="answer-group__wrapper">
                 <label class="answer-group__label answer-group__label--email" for="email">
                   <span class="answer-group__title answer-group__title--email">E-mail:*</span>
-                  <input class="answer-group__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="answer-group__field answer-group__field--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
                 </label>
                 <label class="answer-group__label answer-group__label--phone">
                   <span class="answer-group__title answer-group__title--phone">Телефон:*</span>
-                  <input class="answer-group__field" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <input class="answer-group__field answer-group__field--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                 </label>
               </div>
             </fieldset>
           </div>
-          <h2 class="main-form__title-conteiner">
+          <div class="main-form__title-conteiner main-form__title-conteiner--comment">
             <div class="main-form__title-wrapper main-form__title-wrapper--comment">
-              <div class="main-form__title">Комментарий</div>
+              <h2 class="main-form__title main-form__title--comment">Комментарий</h2>
             </div>
-          </h2>
+          </div>
           <div class="main-form__wrapper">
             <fieldset class="main-form__group main-form__group--comment answer-group">
               <legend class="visually-hidden">Комментарий.</legend>
@@ -124,11 +127,11 @@
               <textarea class="answer-group__field answer-group__field--comment" id="comment" name="comment" rows="5" placeholder="Расскажите обо всех повАдках кота"></textarea>
             </fieldset>
           </div>
-          <h2 class="main-form__title-conteiner">
+          <div class="main-form__title-conteiner main-form__title-conteiner--additional">
             <div class="main-form__title-wrapper main-form__title-wrapper--additional">
-              <div class="main-form__title">Дополнительно</div>
+              <h2 class="main-form__title main-form__title--additional">Дополнительно</h2>
             </div>
-          </h2>
+          </div>
           <div class="main-form__wrapper">
             <fieldset class="main-form__group main-form__group--additional answer-group">
               <legend class="visually-hidden">Дополнительно.</legend>
@@ -181,7 +184,7 @@
         <div class="main-footer__link">
           <a class="main-footer__logo" href="#">
             <svg width="128" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#icon-catenergy"></use>
+              <use xlink:href="img/sprite.svg#icon-catenergy-footer"></use>
             </svg>
           </a>
         </div>
