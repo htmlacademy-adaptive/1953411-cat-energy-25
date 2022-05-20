@@ -45,11 +45,39 @@
 }
 
 .contacts__map {
+  position: relative;
+
   height: 362px;
+
+  z-index: -1;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 42px);
+    left: calc(50% - 26px);
+
+    width: 57px;
+    height: 53px;
+
+    background-image: url("../img/map-mark.svg");
+    background-size: 57px 53px;
+
+    content: "";
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 400px;
+
+    &::before {
+      top: calc(50% - 54px);
+      left: calc(50% - 51px);
+
+      width: 113px;
+      height: 106px;
+
+      background-size: 113px 106px;
+    }
   }
 }
 
