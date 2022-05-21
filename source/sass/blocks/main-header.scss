@@ -1,6 +1,12 @@
 .main-header {
   position: relative;
   z-index: 2;
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient(to right, $white 50%, transparent 50%),
+      linear-gradient(to top, transparent 120px, $green-2 120px);
+  }
 }
 
 .main-header__wrapper {
