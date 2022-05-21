@@ -6,6 +6,10 @@
     background-image:
       linear-gradient(to right, $white 50%, transparent 50%),
       linear-gradient(to top, transparent 120px, $green-2 120px);
+
+    &--inner {
+      background-image: none;
+    }
   }
 }
 
