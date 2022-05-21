@@ -40,8 +40,8 @@
 .main-navigation--opened .main-navigation__toggle::before,
 .main-navigation--opened .main-navigation__toggle::after {
   position: absolute;
-  left: 7px;
-  top: 20px;
+  left: 14px;
+  top: 21px;
   width: 24px;
   height: 2px;
 
@@ -74,10 +74,12 @@
   }
 
   .main-navigation--opened .site-list__link {
-    position: relative;
-
     width: 100vw;
-    padding: 21px 0;
+    padding: 23px 0;
+  }
+
+  .main-navigation--opened .site-list__item {
+    position: relative;
 
     &::before {
       position: absolute;
@@ -85,26 +87,26 @@
       right: 0;
       top: 0;
 
-      height: 2px;
+      height: 1px;
 
-      background-color: #e6e6e6;
+      background-color: $special-grey-0;
 
       content: "";
     }
-  }
 
-  .site-list__item:last-child .site-list__link {
-    &::after {
-      position: absolute;
-      left: -20px;
-      right: -20px;
-      bottom: 0;
+    &:last-child {
+      &::after {
+        position: absolute;
+        left: -20px;
+        right: -20px;
+        bottom: -1px;
 
-      height: 2px;
+        height: 1px;
 
-      background-color: #e6e6e6;
+        background-color: $special-grey-0;
 
-      content: "";
+        content: "";
+      }
     }
   }
 
@@ -120,14 +122,16 @@
     display: flex;
     flex-direction: column;
 
-    margin-top: 20px;
+    margin-top: 17px;
   }
 
   .main-navigation--nojs .site-list__link {
-    position: relative;
-
     width: 100%;
-    padding: 21px 0;
+    padding: 23px 0;
+  }
+
+  .main-navigation--nojs .site-list__item {
+    position: relative;
 
     &::before {
       position: absolute;
@@ -135,19 +139,28 @@
       right: -20px;
       top: 0;
 
-      height: 2px;
+      height: 1px;
 
-      background-color: #e6e6e6;
+      background-color: $special-grey-0;
 
       content: "";
     }
   }
 
-  .main-navigation--nojs .site-list__item:last-child .site-list__link {
-    padding-bottom: 1px;
+  .main-navigation--nojs .site-list__item:last-child {
+    margin-bottom: -17px;
 
     &::after {
-      bottom: -19px;
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      bottom: -1px;
+
+      height: 1px;
+
+      background-color: $special-grey-0;
+
+      content: "";
     }
   }
 }
