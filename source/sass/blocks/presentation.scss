@@ -1,16 +1,18 @@
 .presentation {
   background-image:
     url("../img/cat-background-mobile.jpg"),
-    linear-gradient(to bottom, $green-2 302px, $white 303px);
+    linear-gradient(to bottom, $green-2 302px, $white 302px);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size:
+    320px auto,
+    100%;
   color: $white;
 
   @media (min-resolution: 2dppx) {
     background-image:
       url("../../img/cat-background-mobile@2x.jpg"),
-      linear-gradient(to bottom, $green-2 302px, $white 303px);
-    background-size: 320px auto;
+      linear-gradient(to bottom, $green-2 302px, $white 302px);
   }
 
   @media (min-width: $tablet-width) {
