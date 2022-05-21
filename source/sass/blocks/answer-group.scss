@@ -201,6 +201,7 @@
   padding: 14px 14px 12px;
 
   color: $grey;
+  font-family: $primary-font;
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid $special-grey;
@@ -224,6 +225,8 @@
     padding-top: 9px;
 
     line-height: 18px;
+
+    resize: none;
   }
 
   &::placeholder {

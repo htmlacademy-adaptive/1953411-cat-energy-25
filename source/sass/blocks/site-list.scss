@@ -84,13 +84,13 @@
   }
 }
 
-.main-header--inner .site-list__link {
+.site-list--inner .site-list__link {
   @media (min-width: $desktop-width) {
     color: $black;
   }
 }
 
-.main-header--inner .site-list__item {
+.site-list--inner .site-list__item {
   @media (min-width: $tablet-width) {
     &--current::before {
       bottom: 0;
