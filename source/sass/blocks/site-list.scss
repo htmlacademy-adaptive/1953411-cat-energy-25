@@ -7,6 +7,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    max-width: 450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 600px;
   }
 }
 
@@ -57,7 +64,7 @@
 
   text-decoration: none;
   color: $black;
-  font-weight: 400;
+  font-weight: 500;
 
   &:hover {
     opacity: 0.6;
@@ -72,6 +79,7 @@
 
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,13 +91,13 @@
   }
 }
 
-.main-header--inner .site-list__link {
+.site-list--inner .site-list__link {
   @media (min-width: $desktop-width) {
     color: $black;
   }
 }
 
-.main-header--inner .site-list__item {
+.site-list--inner .site-list__item {
   @media (min-width: $tablet-width) {
     &--current::before {
       bottom: 0;
@@ -116,5 +124,83 @@
 .site-list__item:last-child {
   @media (min-width: $tablet-width) {
     margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list--opened .site-list__link {
+    width: 100vw;
+    padding: 23px 0;
+  }
+
+  .site-list--opened .site-list__item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+
+      height: 1px;
+
+      background-color: $special-grey-0;
+
+      content: "";
+    }
+
+    &:last-child {
+      &::after {
+        position: absolute;
+        left: -20px;
+        right: -20px;
+        bottom: -1px;
+
+        height: 1px;
+
+        background-color: $special-grey-0;
+
+        content: "";
+      }
+    }
+  }
+
+  .site-list--nojs .site-list__link {
+    width: 100%;
+    padding: 23px 0;
+  }
+
+  .site-list--nojs .site-list__item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      top: 0;
+
+      height: 1px;
+
+      background-color: $special-grey-0;
+
+      content: "";
+    }
+  }
+
+  .site-list--nojs .site-list__item:last-child {
+    margin-bottom: -17px;
+
+    &::after {
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      bottom: -1px;
+
+      height: 1px;
+
+      background-color: $special-grey-0;
+
+      content: "";
+    }
   }
 }

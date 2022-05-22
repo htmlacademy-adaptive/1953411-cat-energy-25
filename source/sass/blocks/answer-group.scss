@@ -201,6 +201,7 @@
   padding: 14px 14px 12px;
 
   color: $grey;
+  font-family: $primary-font;
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid $special-grey;
@@ -224,6 +225,8 @@
     padding-top: 9px;
 
     line-height: 18px;
+
+    resize: none;
   }
 
   &::placeholder {
@@ -337,6 +340,10 @@
   border-color: $grey;
 }
 
+.answer-group__field:focus {
+  border-color: $grey;
+}
+
 .answer-group__label:hover .answer-group__radio-mark,
 .answer-group__label:hover .answer-group__checkbox-mark {
   border-color: $light-grey-2;
@@ -358,6 +365,8 @@
       grid-template-columns: 221px 221px;
       column-gap: 123px;
       row-gap: 42px;
+
+      max-width: 1200px;
     }
   }
 
@@ -366,6 +375,8 @@
     justify-content: space-between;
 
     &--smaller {
+      display: grid;
+      grid-template-columns: 221px 221px 221px 221px;
       column-gap: 104px;
     }
   }

@@ -91,3 +91,18 @@
     height: 400px;
   }
 }
+
+.contacts__map--nojs {
+  background-image: url("../img/map-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+  }
+}

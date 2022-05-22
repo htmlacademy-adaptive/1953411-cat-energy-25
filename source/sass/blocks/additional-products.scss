@@ -211,6 +211,7 @@
     height: 80px;
 
     background-image: url("../img/gift.svg");
+    background-size: 78px 80px;
     content: "";
   }
 
@@ -221,15 +222,12 @@
     text-align: start;
 
     &::before {
-      position: absolute;
       top: -14px;
       left: 0;
       width: 80px;
       height: 83px;
 
-      background-image: url("../img/gift.svg");
       background-size: 80px 83px;
-      content: "";
     }
 
     @media (min-width: $desktop-width) {
