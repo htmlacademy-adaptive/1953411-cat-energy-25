@@ -349,6 +349,11 @@
   border-color: $light-grey-2;
 }
 
+.answer-group__radio:focus + .answer-group__radio-mark,
+.answer-group__checkbox:focus + .answer-group__checkbox-mark {
+  border-color: $grey;
+}
+
 .answer-group__label--disabled {
   opacity: 0.3;
 
